@@ -1,0 +1,11 @@
+<span class="kicker">Linux</span>
+<h3>Kernel internals via syscalls</h3>
+<ul>
+  <li><strong>I/O / VFS</strong> — virtual FS, sockets, block layer, network stack, drivers</li>
+  <li><strong>Memory</strong> — virtual memory, paging, page cache</li>
+  <li><strong>Process mgmt</strong> — signals, create/terminate, CPU scheduling</li>
+  <li><strong>Interrupts + dispatcher</strong> — hardware events enter; work is routed</li>
+</ul>
+<div class="callout">
+  <strong>Practice tip:</strong> load only needed drivers as modules (<code>make modules_install</code> / LKMs) to shrink the running footprint — modular idea inside a monolithic kernel.
+</div>

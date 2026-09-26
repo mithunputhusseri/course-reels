@@ -1,0 +1,15 @@
+<span class="kicker">Compare</span>
+<h3>Monolithic vs modular</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Monolithic</h4>
+    <p>Tight coupling, all-in-one. Extending often means rebuild/patch. Larger fixed footprint. Direct function calls. Weak failure isolation.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Modular</h4>
+    <p>Looser coupling via interfaces. Load/replace modules. On-demand footprint. Some indirection. Better for <em>some</em> faults — modules still often share kernel space.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Nuance:</strong> modular ≠ microkernel. Modules can still run <em>inside</em> the kernel.
+</div>

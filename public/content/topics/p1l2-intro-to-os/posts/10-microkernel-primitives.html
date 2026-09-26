@@ -1,0 +1,15 @@
+<span class="kicker">Microkernel</span>
+<h3>What stays in the kernel</h3>
+<ul>
+  <li><strong>IPC</strong> — message passing between clients and servers</li>
+  <li><strong>Address spaces</strong> — protect and map memory</li>
+  <li><strong>Threads</strong> — basic execution contexts</li>
+</ul>
+<p>Typical placement:</p>
+<ul>
+  <li>File system &amp; drivers → <strong>user-level servers</strong></li>
+  <li>Process/thread basics, IPC, address spaces → <strong>kernel</strong></li>
+</ul>
+<div class="callout">
+  <strong>Key:</strong> mechanisms in the kernel; most policy and services outside it.
+</div>

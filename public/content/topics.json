@@ -1,6 +1,105 @@
 {
   "topics": [
     {
+      "id": "p1l2-intro-to-os",
+      "title": "Intro to OS Architectures",
+      "subtitle": "P1L2 · CS-6200",
+      "description": "Monolithic, modular, and microkernel designs — plus how Linux and macOS put them into practice.",
+      "accent": "#c47a3a",
+      "posts": [
+        {
+          "id": "01-design-tradeoff",
+          "title": "Performance vs flexibility",
+          "file": "content/topics/p1l2-intro-to-os/posts/01-design-tradeoff.html"
+        },
+        {
+          "id": "02-three-architectures",
+          "title": "Three classic designs",
+          "file": "content/topics/p1l2-intro-to-os/posts/02-three-architectures.html"
+        },
+        {
+          "id": "03-monolithic-os",
+          "title": "Monolithic OS",
+          "file": "content/topics/p1l2-intro-to-os/posts/03-monolithic-os.html"
+        },
+        {
+          "id": "04-monolithic-components",
+          "title": "What's in the kernel",
+          "file": "content/topics/p1l2-intro-to-os/posts/04-monolithic-components.html"
+        },
+        {
+          "id": "05-monolithic-tradeoffs",
+          "title": "Monolithic pros & cons",
+          "file": "content/topics/p1l2-intro-to-os/posts/05-monolithic-tradeoffs.html"
+        },
+        {
+          "id": "06-modular-os",
+          "title": "Modular OS",
+          "file": "content/topics/p1l2-intro-to-os/posts/06-modular-os.html"
+        },
+        {
+          "id": "07-modular-ideas",
+          "title": "Modular customization",
+          "file": "content/topics/p1l2-intro-to-os/posts/07-modular-ideas.html"
+        },
+        {
+          "id": "08-monolithic-vs-modular",
+          "title": "Monolithic vs modular",
+          "file": "content/topics/p1l2-intro-to-os/posts/08-monolithic-vs-modular.html"
+        },
+        {
+          "id": "09-microkernel",
+          "title": "Microkernel idea",
+          "file": "content/topics/p1l2-intro-to-os/posts/09-microkernel.html"
+        },
+        {
+          "id": "10-microkernel-primitives",
+          "title": "Microkernel primitives",
+          "file": "content/topics/p1l2-intro-to-os/posts/10-microkernel-primitives.html"
+        },
+        {
+          "id": "11-microkernel-tradeoffs",
+          "title": "Microkernel pros & cons",
+          "file": "content/topics/p1l2-intro-to-os/posts/11-microkernel-tradeoffs.html"
+        },
+        {
+          "id": "12-architecture-scorecard",
+          "title": "Architecture scorecard",
+          "file": "content/topics/p1l2-intro-to-os/posts/12-architecture-scorecard.html"
+        },
+        {
+          "id": "13-linux-modular-monolithic",
+          "title": "Linux architecture",
+          "file": "content/topics/p1l2-intro-to-os/posts/13-linux-modular-monolithic.html"
+        },
+        {
+          "id": "14-linux-layers",
+          "title": "Linux layers",
+          "file": "content/topics/p1l2-intro-to-os/posts/14-linux-layers.html"
+        },
+        {
+          "id": "15-linux-internals",
+          "title": "Linux kernel internals",
+          "file": "content/topics/p1l2-intro-to-os/posts/15-linux-internals.html"
+        },
+        {
+          "id": "16-macos-hybrid",
+          "title": "macOS hybrid",
+          "file": "content/topics/p1l2-intro-to-os/posts/16-macos-hybrid.html"
+        },
+        {
+          "id": "17-macos-layers",
+          "title": "macOS layers",
+          "file": "content/topics/p1l2-intro-to-os/posts/17-macos-layers.html"
+        },
+        {
+          "id": "18-takeaways",
+          "title": "Quick takeaways",
+          "file": "content/topics/p1l2-intro-to-os/posts/18-takeaways.html"
+        }
+      ]
+    },
+    {
       "id": "p2l5-thread-performance",
       "title": "Thread Performance",
       "subtitle": "P2L5 · CS-6200",
