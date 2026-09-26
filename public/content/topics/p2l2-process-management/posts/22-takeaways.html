@@ -1,0 +1,13 @@
+<span class="kicker">Wrap-up</span>
+<h3>Quick takeaways</h3>
+<ol>
+  <li><strong>Process</strong> = running program + state; one binary → many processes</li>
+  <li><strong>Address space</strong> = text/data/heap/stack mapped via page tables</li>
+  <li><strong>PCB</strong> = stop/resume snapshot; heart of a context switch</li>
+  <li><strong>Lifecycle</strong> = new → ready → running, with waiting &amp; terminate</li>
+  <li><strong>Create</strong> with <code>fork</code> + <code>exec</code>; scheduler balances \(T_p\) vs \(T_s\)</li>
+  <li><strong>IPC</strong> = messages (safer/slower) or shared memory (fast/harder)</li>
+</ol>
+<div class="callout">
+  <strong>Exam lens:</strong> ask where state lives (CPU vs PCB vs memory) and who mediates communication.
+</div>

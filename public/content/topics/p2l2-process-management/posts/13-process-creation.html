@@ -1,0 +1,12 @@
+<span class="kicker">Creation</span>
+<h3>Processes form a tree</h3>
+<img src="__BASE__content/topics/p2l2-process-management/assets/process-tree.svg" alt="init or systemd above a shell that spawns ls, vim, and browser children" />
+<ul>
+  <li><strong>Login</strong> — a shell process is created</li>
+  <li><strong>Run <code>ls</code></strong> — shell creates a child for the command</li>
+  <li><strong>Unix / Linux</strong> — <code>init</code> / <code>systemd</code> often ancestors user processes</li>
+  <li><strong>Android</strong> — <strong>Zygote</strong> is the parent daemon for apps</li>
+</ul>
+<div class="callout">
+  <strong>Key:</strong> every process (except the root) has a parent that created it.
+</div>

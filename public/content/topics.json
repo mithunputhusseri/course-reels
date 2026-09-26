@@ -100,6 +100,145 @@
       ]
     },
     {
+      "id": "p2l2-process-management",
+      "title": "Process and Process Management",
+      "subtitle": "P2L2 · CS-6200",
+      "description": "What a process is, address spaces, PCBs, context switches, lifecycle, scheduling, and IPC.",
+      "accent": "#3d7ea6",
+      "posts": [
+        {
+          "id": "01-program-vs-process",
+          "title": "Program vs process",
+          "file": "content/topics/p2l2-process-management/posts/01-program-vs-process.html"
+        },
+        {
+          "id": "02-whats-inside",
+          "title": "What's inside a process",
+          "file": "content/topics/p2l2-process-management/posts/02-whats-inside.html"
+        },
+        {
+          "id": "03-memory-layout",
+          "title": "Memory layout",
+          "file": "content/topics/p2l2-process-management/posts/03-memory-layout.html"
+        },
+        {
+          "id": "04-memory-segments",
+          "title": "Text, data, heap, stack",
+          "file": "content/topics/p2l2-process-management/posts/04-memory-segments.html"
+        },
+        {
+          "id": "05-virtual-memory",
+          "title": "Virtual memory",
+          "file": "content/topics/p2l2-process-management/posts/05-virtual-memory.html"
+        },
+        {
+          "id": "06-page-tables",
+          "title": "Page tables & protection",
+          "file": "content/topics/p2l2-process-management/posts/06-page-tables.html"
+        },
+        {
+          "id": "07-execution-state",
+          "title": "Tracking execution state",
+          "file": "content/topics/p2l2-process-management/posts/07-execution-state.html"
+        },
+        {
+          "id": "08-pcb",
+          "title": "Process Control Block",
+          "file": "content/topics/p2l2-process-management/posts/08-pcb.html"
+        },
+        {
+          "id": "09-context-switch",
+          "title": "Context switch",
+          "file": "content/topics/p2l2-process-management/posts/09-context-switch.html"
+        },
+        {
+          "id": "10-context-switch-cost",
+          "title": "Context switch cost",
+          "file": "content/topics/p2l2-process-management/posts/10-context-switch-cost.html"
+        },
+        {
+          "id": "11-process-lifecycle",
+          "title": "Process lifecycle",
+          "file": "content/topics/p2l2-process-management/posts/11-process-lifecycle.html"
+        },
+        {
+          "id": "12-state-transitions",
+          "title": "State transitions",
+          "file": "content/topics/p2l2-process-management/posts/12-state-transitions.html"
+        },
+        {
+          "id": "13-process-creation",
+          "title": "Process creation tree",
+          "file": "content/topics/p2l2-process-management/posts/13-process-creation.html"
+        },
+        {
+          "id": "14-fork-and-exec",
+          "title": "fork and exec",
+          "file": "content/topics/p2l2-process-management/posts/14-fork-and-exec.html"
+        },
+        {
+          "id": "15-cpu-scheduler",
+          "title": "CPU scheduler",
+          "file": "content/topics/p2l2-process-management/posts/15-cpu-scheduler.html"
+        },
+        {
+          "id": "16-time-slice-efficiency",
+          "title": "Time slice efficiency",
+          "file": "content/topics/p2l2-process-management/posts/16-time-slice-efficiency.html"
+        },
+        {
+          "id": "17-io-and-queues",
+          "title": "I/O and queues",
+          "file": "content/topics/p2l2-process-management/posts/17-io-and-queues.html"
+        },
+        {
+          "id": "18-ipc-goals",
+          "title": "IPC goals",
+          "file": "content/topics/p2l2-process-management/posts/18-ipc-goals.html"
+        },
+        {
+          "id": "19-message-passing",
+          "title": "Message-passing IPC",
+          "file": "content/topics/p2l2-process-management/posts/19-message-passing.html"
+        },
+        {
+          "id": "20-shared-memory",
+          "title": "Shared-memory IPC",
+          "file": "content/topics/p2l2-process-management/posts/20-shared-memory.html"
+        },
+        {
+          "id": "21-ipc-compare",
+          "title": "IPC comparison",
+          "file": "content/topics/p2l2-process-management/posts/21-ipc-compare.html"
+        },
+        {
+          "id": "22-takeaways",
+          "title": "Quick takeaways",
+          "file": "content/topics/p2l2-process-management/posts/22-takeaways.html"
+        },
+        {
+          "id": "23-quiz-basics",
+          "title": "Quiz: basics",
+          "file": "content/topics/p2l2-process-management/posts/23-quiz-basics.html"
+        },
+        {
+          "id": "24-quiz-pcb-switch",
+          "title": "Quiz: PCB & switch",
+          "file": "content/topics/p2l2-process-management/posts/24-quiz-pcb-switch.html"
+        },
+        {
+          "id": "25-quiz-lifecycle-sched",
+          "title": "Quiz: lifecycle & sched",
+          "file": "content/topics/p2l2-process-management/posts/25-quiz-lifecycle-sched.html"
+        },
+        {
+          "id": "26-quiz-fork-ipc",
+          "title": "Quiz: fork & IPC",
+          "file": "content/topics/p2l2-process-management/posts/26-quiz-fork-ipc.html"
+        }
+      ]
+    },
+    {
       "id": "p2l5-thread-performance",
       "title": "Thread Performance",
       "subtitle": "P2L5 · CS-6200",

@@ -1,0 +1,12 @@
+<span class="kicker">Shared memory</span>
+<h3>Map the same pages into both processes</h3>
+<img src="__BASE__content/topics/p2l2-process-management/assets/shared-memory-ipc.svg" alt="Two address spaces mapping the same shared physical region" />
+<ul>
+  <li><strong>Setup</strong> — OS creates a shared region and maps it into each process</li>
+  <li><strong>Hot path</strong> — processes read/write directly (OS out of the way)</li>
+  <li><strong>+</strong> — high performance; no per-message kernel copy</li>
+  <li><strong>−</strong> — apps must sync (locks, barriers); error-prone</li>
+</ul>
+<div class="callout">
+  <strong>Key:</strong> faster because the kernel leaves the data path after setup.
+</div>

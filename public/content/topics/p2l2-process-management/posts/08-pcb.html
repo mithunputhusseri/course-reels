@@ -1,0 +1,12 @@
+<span class="kicker">PCB</span>
+<h3>Process Control Block</h3>
+<p>The OS keeps a <strong>PCB</strong> for every process — created when the process is created; PC starts at the first instruction.</p>
+<ul>
+  <li><strong>Identity</strong> — PID, process state, priority</li>
+  <li><strong>CPU state</strong> — PC, registers, scheduling info</li>
+  <li><strong>Memory</strong> — limits, page-table info</li>
+  <li><strong>I/O &amp; signals</strong> — open files, signal mask</li>
+</ul>
+<div class="callout">
+  <strong>Key:</strong> the PCB is the kernel's "resume tape" for a process.
+</div>

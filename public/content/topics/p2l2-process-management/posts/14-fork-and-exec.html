@@ -1,0 +1,18 @@
+<span class="kicker">Mechanisms</span>
+<h3><code>fork</code> then <code>exec</code></h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>fork</h4>
+    <p>Copy parent PCB → child PCB. Child continues at the instruction <em>after</em> <code>fork</code>.</p>
+  </div>
+  <div class="compare-card">
+    <h4>exec</h4>
+    <p>Replace child's address space with a new program image; start at that program's first instruction.</p>
+  </div>
+</div>
+<pre>shell: fork()
+child: exec("ls")   // becomes ls
+parent: wait / next prompt</pre>
+<div class="callout">
+  <strong>Pattern:</strong> create a near-clone, then morph the child into the program you actually want.
+</div>

@@ -1,0 +1,11 @@
+<span class="kicker">I/O</span>
+<h3>Ready queue, CPU, and I/O queues</h3>
+<img src="__BASE__content/topics/p2l2-process-management/assets/io-scheduling.svg" alt="Processes move between ready queue, CPU, and I/O queue" />
+<ul>
+  <li><strong>I/O request</strong> — leave CPU → I/O queue → later ready</li>
+  <li><strong>Time slice end</strong> — back to ready</li>
+  <li><strong>Fork</strong> — child may run; scheduling continues</li>
+</ul>
+<div class="callout">
+  <strong>Why multiprogramming wins:</strong> overlap one process's I/O with another's CPU work.
+</div>

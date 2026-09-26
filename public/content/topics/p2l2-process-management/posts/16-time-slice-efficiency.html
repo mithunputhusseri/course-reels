@@ -1,0 +1,12 @@
+<span class="kicker">Efficiency</span>
+<h3>Time slice vs switch overhead</h3>
+<p>Useful work \(T_p\) vs scheduler/switch cost \(T_s\):</p>
+<pre>efficiency ≈ Tp / (Tp + Ts)</pre>
+<ul>
+  <li><strong>\(T_p = 10×T_s\)</strong> — ~91% useful</li>
+  <li><strong>\(T_p = T_s\)</strong> — ~50% (too much overhead)</li>
+  <li><strong>\(T_p ≫ T_s\)</strong> — efficient, but worse interactive latency</li>
+</ul>
+<div class="callout">
+  <strong>Tradeoff:</strong> short slices → snappy UI, more switches; long slices → efficient, less interactive.
+</div>

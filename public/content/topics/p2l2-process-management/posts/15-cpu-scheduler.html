@@ -1,0 +1,17 @@
+<span class="kicker">Scheduler</span>
+<h3>Who runs next — and for how long?</h3>
+<p>Only <strong>ready</strong> processes are candidates. The CPU scheduler picks which one runs and for how long.</p>
+<ol>
+  <li><strong>Preempt</strong> — interrupt current; save PCB</li>
+  <li><strong>Schedule</strong> — run the policy; pick next</li>
+  <li><strong>Dispatch</strong> — restore that PCB and run</li>
+</ol>
+<div class="chip-row">
+  <span class="chip">priority</span>
+  <span class="chip">fairness</span>
+  <span class="chip">deadlines</span>
+  <span class="chip">I/O vs CPU</span>
+</div>
+<div class="callout">
+  <strong>Key:</strong> scheduling = selection metric + time-slice length.
+</div>

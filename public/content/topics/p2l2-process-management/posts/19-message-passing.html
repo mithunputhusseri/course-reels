@@ -1,0 +1,16 @@
+<span class="kicker">Message passing</span>
+<h3>Talk through an OS channel</h3>
+<img src="__BASE__content/topics/p2l2-process-management/assets/message-passing-ipc.svg" alt="Two processes exchanging messages via an OS-managed channel" />
+<div class="compare">
+  <div class="compare-card">
+    <h4>+</h4>
+    <p>OS manages the channel; simpler sync model for many cases</p>
+  </div>
+  <div class="compare-card">
+    <h4>−</h4>
+    <p>Copy overhead: process → channel → process</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Example:</strong> web server process ↔ database process via pipe/socket.
+</div>

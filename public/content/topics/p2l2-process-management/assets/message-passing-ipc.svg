@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="Message-passing IPC via OS channel">
+  <rect width="420" height="240" fill="#f7f4ef"/>
+  <text x="210" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Message-passing IPC</text>
+
+  <!-- Process A -->
+  <rect x="20" y="60" width="110" height="100" rx="10" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
+  <text x="75" y="95" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a2a33">Process A</text>
+  <text x="75" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#3d7ea6">web server</text>
+  <text x="75" y="140" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#5a6b73">send()</text>
+
+  <!-- Channel -->
+  <rect x="160" y="70" width="100" height="80" rx="10" fill="#1a2a33"/>
+  <text x="210" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#fff">OS channel</text>
+  <text x="210" y="122" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#b8d4e8">pipe / socket</text>
+  <text x="210" y="138" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#9ecfb8">kernel buffer</text>
+
+  <!-- Process B -->
+  <rect x="290" y="60" width="110" height="100" rx="10" fill="#e4f0e8" stroke="#2f8f74" stroke-width="2"/>
+  <text x="345" y="95" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a2a33">Process B</text>
+  <text x="345" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#2f8f74">database</text>
+  <text x="345" y="140" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#5a6b73">recv()</text>
+
+  <!-- Arrows -->
+  <path d="M130 100 H155" stroke="#c47a3a" stroke-width="2.5" marker-end="url(#m)"/>
+  <path d="M260 110 H285" stroke="#c47a3a" stroke-width="2.5" marker-end="url(#m)"/>
+
+  <defs>
+    <marker id="m" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#c47a3a"/>
+    </marker>
+  </defs>
+
+  <text x="210" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">Copy: process ’ channel ’ process</text>
+  <text x="210" y="222" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#7a7268">Safer sync model · higher overhead</text>
+</svg>

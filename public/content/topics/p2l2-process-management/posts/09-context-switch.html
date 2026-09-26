@@ -1,0 +1,12 @@
+<span class="kicker">Context switch</span>
+<h3>Swapping PCBs to change who runs</h3>
+<img src="__BASE__content/topics/p2l2-process-management/assets/pcb-context-switch.svg" alt="CPU saves P1 state into PCB.P1 then restores PCB.P2 into registers" />
+<ol>
+  <li><strong>Save</strong> — CPU registers → PCB of current process</li>
+  <li><strong>Schedule</strong> — pick next ready process</li>
+  <li><strong>Restore</strong> — next PCB → CPU registers</li>
+  <li><strong>Resume</strong> — continue as if never interrupted</li>
+</ol>
+<div class="callout">
+  <strong>Key:</strong> a context switch is switching the CPU from one process's context to another's.
+</div>
