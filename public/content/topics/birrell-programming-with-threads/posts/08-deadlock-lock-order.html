@@ -1,0 +1,11 @@
+<span class="kicker">Liveness</span>
+<h3>Deadlock and lock order</h3>
+<img src="__BASE__content/topics/birrell-programming-with-threads/assets/deadlock-cycle.svg" alt="Two-lock deadlock cycle" />
+<ul>
+  <li>Simplest: re-lock a non-recursive mutex you already hold</li>
+  <li>Classic: A holds M1 wants M2; B holds M2 wants M1</li>
+  <li><strong>Fix:</strong> a partial order — always acquire locks in the same direction</li>
+</ul>
+<div class="callout">
+  <strong>Tip:</strong> if ordering is hard, partition data so conflicting lock pairs aren't needed in opposite orders.
+</div>

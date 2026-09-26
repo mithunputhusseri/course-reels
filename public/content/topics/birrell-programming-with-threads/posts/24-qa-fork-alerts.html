@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q9–Q10</span>
+<h3>Fork, alerts &amp; capacity</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q9</h4>
+    <p>Are many blocked threads as harmful as many runnable ones? What's a rough Fork cost?</p>
+    <p><strong>A:</strong> No — blocked mainly cost stack/metadata. Fork ≈ 2–3 scheduling decisions even with caching.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q10</h4>
+    <p>SRC alert convention: which threads may you Alert, and why?</p>
+    <p><strong>A:</strong> Only threads you forked — treat Alert as a request that the target terminate completely.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Build order:</strong> useful → correct → live → efficient. Measure conflicts; don't optimize away safety.
+</div>

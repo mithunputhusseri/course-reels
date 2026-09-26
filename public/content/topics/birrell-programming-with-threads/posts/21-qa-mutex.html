@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q3–Q4</span>
+<h3>Mutexes &amp; invariants</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q3</h4>
+    <p>In unprotected Insert, what goes wrong if A and B both execute store then both increment?</p>
+    <p><strong>A:</strong> One value is overwritten (lost); two increments leave an unused NIL slot.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q4</h4>
+    <p>When must a thread restore the mutex invariant?</p>
+    <p><strong>A:</strong> Before unlocking, and before Wait (because Wait unlocks the mutex).</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Check:</strong> invariant true whenever the mutex is free; may be temporarily false inside the critical section.
+</div>

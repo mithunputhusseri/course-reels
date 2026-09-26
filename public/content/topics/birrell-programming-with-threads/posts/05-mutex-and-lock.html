@@ -1,0 +1,11 @@
+<span class="kicker">Mutual exclusion</span>
+<h3>Mutex and LOCK</h3>
+<img src="__BASE__content/topics/birrell-programming-with-threads/assets/mutex-critical-section.svg" alt="Mutex critical section" />
+<p>A mutex is locked or unlocked (starts unlocked). <code>LOCK m DO … END</code> acquires, runs the body, then releases.</p>
+<pre>LOCK m DO
+  newElement^.next := head;
+  head := newElement;
+END;</pre>
+<div class="callout">
+  <strong>Rule #1:</strong> every shared mutable datum has one mutex — touch it only while holding that mutex.
+</div>

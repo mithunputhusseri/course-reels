@@ -331,6 +331,135 @@
           "file": "content/topics/p2l5-thread-performance/posts/17-workloads-metrics.html"
         }
       ]
+    },
+    {
+      "id": "birrell-programming-with-threads",
+      "title": "Programming with Threads",
+      "subtitle": "Birrell · 1989",
+      "description": "Andrew Birrell's classic guide: mutexes, conditions, Fork, alerts, pipelines — plus exam-ready Q&A.",
+      "accent": "#b85c38",
+      "posts": [
+        {
+          "id": "01-what-is-a-thread",
+          "title": "What is a thread?",
+          "file": "content/topics/birrell-programming-with-threads/posts/01-what-is-a-thread.html"
+        },
+        {
+          "id": "02-why-concurrency",
+          "title": "Why use concurrency?",
+          "file": "content/topics/birrell-programming-with-threads/posts/02-why-concurrency.html"
+        },
+        {
+          "id": "03-four-mechanisms",
+          "title": "Four core mechanisms",
+          "file": "content/topics/birrell-programming-with-threads/posts/03-four-mechanisms.html"
+        },
+        {
+          "id": "04-fork-and-join",
+          "title": "Fork and Join",
+          "file": "content/topics/birrell-programming-with-threads/posts/04-fork-and-join.html"
+        },
+        {
+          "id": "05-mutex-and-lock",
+          "title": "Mutex and LOCK",
+          "file": "content/topics/birrell-programming-with-threads/posts/05-mutex-and-lock.html"
+        },
+        {
+          "id": "06-unprotected-insert",
+          "title": "The Insert race",
+          "file": "content/topics/birrell-programming-with-threads/posts/06-unprotected-insert.html"
+        },
+        {
+          "id": "07-invariants",
+          "title": "Mutex invariants",
+          "file": "content/topics/birrell-programming-with-threads/posts/07-invariants.html"
+        },
+        {
+          "id": "08-deadlock-lock-order",
+          "title": "Deadlock & lock order",
+          "file": "content/topics/birrell-programming-with-threads/posts/08-deadlock-lock-order.html"
+        },
+        {
+          "id": "09-granularity-priority",
+          "title": "Granularity & priority",
+          "file": "content/topics/birrell-programming-with-threads/posts/09-granularity-priority.html"
+        },
+        {
+          "id": "10-condition-variables",
+          "title": "Condition variables",
+          "file": "content/topics/birrell-programming-with-threads/posts/10-condition-variables.html"
+        },
+        {
+          "id": "11-while-not-if",
+          "title": "WHILE, not IF",
+          "file": "content/topics/birrell-programming-with-threads/posts/11-while-not-if.html"
+        },
+        {
+          "id": "12-signal-vs-broadcast",
+          "title": "Signal vs Broadcast",
+          "file": "content/topics/birrell-programming-with-threads/posts/12-signal-vs-broadcast.html"
+        },
+        {
+          "id": "13-readers-writers",
+          "title": "Readers / writers",
+          "file": "content/topics/birrell-programming-with-threads/posts/13-readers-writers.html"
+        },
+        {
+          "id": "14-nested-monitor",
+          "title": "Nested monitor problem",
+          "file": "content/topics/birrell-programming-with-threads/posts/14-nested-monitor.html"
+        },
+        {
+          "id": "15-pipelines",
+          "title": "Pipelines with Fork",
+          "file": "content/topics/birrell-programming-with-threads/posts/15-pipelines.html"
+        },
+        {
+          "id": "16-alerts",
+          "title": "Alerts & cancellation",
+          "file": "content/topics/birrell-programming-with-threads/posts/16-alerts.html"
+        },
+        {
+          "id": "17-extra-techniques",
+          "title": "Up-calls & work crews",
+          "file": "content/topics/birrell-programming-with-threads/posts/17-extra-techniques.html"
+        },
+        {
+          "id": "18-building-order",
+          "title": "Useful → correct → live",
+          "file": "content/topics/birrell-programming-with-threads/posts/18-building-order.html"
+        },
+        {
+          "id": "19-rules-cheat-sheet",
+          "title": "Rules cheat sheet",
+          "file": "content/topics/birrell-programming-with-threads/posts/19-rules-cheat-sheet.html"
+        },
+        {
+          "id": "20-qa-basics",
+          "title": "Q&A: threads & motivation",
+          "file": "content/topics/birrell-programming-with-threads/posts/20-qa-basics.html"
+        },
+        {
+          "id": "21-qa-mutex",
+          "title": "Q&A: mutexes & invariants",
+          "file": "content/topics/birrell-programming-with-threads/posts/21-qa-mutex.html"
+        },
+        {
+          "id": "22-qa-conditions",
+          "title": "Q&A: conditions",
+          "file": "content/topics/birrell-programming-with-threads/posts/22-qa-conditions.html"
+        },
+        {
+          "id": "23-qa-deadlock",
+          "title": "Q&A: deadlock",
+          "file": "content/topics/birrell-programming-with-threads/posts/23-qa-deadlock.html"
+        },
+        {
+          "id": "24-qa-fork-alerts",
+          "title": "Q&A: Fork & alerts",
+          "file": "content/topics/birrell-programming-with-threads/posts/24-qa-fork-alerts.html"
+        }
+      ]
     }
   ]
 }

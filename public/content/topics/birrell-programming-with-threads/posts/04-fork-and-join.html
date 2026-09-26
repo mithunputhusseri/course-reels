@@ -1,0 +1,14 @@
+<span class="kicker">Creation</span>
+<h3>Fork and Join</h3>
+<p><code>Fork(proc, arg)</code> starts a new thread at <code>proc</code>. The thread dies when that procedure returns.</p>
+<pre>t := Fork(a, x);   (* a(x) starts now *)
+p := b(y);         (* overlaps with a *)
+q := Join(t);      (* wait; q := result of a *)</pre>
+<ul>
+  <li><strong>Join</strong> waits and returns the initial procedure's result</li>
+  <li>At SRC, Join was uncommon — daemons, no result, or other sync</li>
+  <li>Unjoined finished threads quietly evaporate</li>
+</ul>
+<div class="callout">
+  <strong>Pattern:</strong> fork real parallel work; don't fork tasks smaller than ~2–3 scheduling decisions of overhead.
+</div>

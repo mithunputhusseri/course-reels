@@ -1,0 +1,12 @@
+<span class="kicker">Motivation</span>
+<h3>Five reasons to use concurrency</h3>
+<ul>
+  <li><strong>Multiprocessors</strong> — use cores without paying process/IPC setup cost (~≤10 CPUs in Birrell's era)</li>
+  <li><strong>Slow devices</strong> — disk/net wait in one thread; others keep working</li>
+  <li><strong>Humans</strong> — UI actions in parallel; don't freeze the display</li>
+  <li><strong>Servers</strong> — many clients without one process per client</li>
+  <li><strong>Lower latency</strong> — return the answer, rebalance the tree in a background thread</li>
+</ul>
+<div class="callout">
+  <strong>Even on 1 CPU:</strong> deferring work can improve responsiveness while total work stays the same.
+</div>

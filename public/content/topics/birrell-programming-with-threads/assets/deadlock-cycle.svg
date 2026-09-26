@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-label="Two-thread mutex deadlock cycle">
+  <rect width="420" height="260" fill="#f7f4ef"/>
+  <text x="210" y="24" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Classic two-lock deadlock</text>
+
+  <rect x="40" y="60" width="120" height="70" rx="10" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
+  <text x="100" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a2a33">Thread A</text>
+  <text x="100" y="110" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#5a6b73">holds M1</text>
+
+  <rect x="260" y="60" width="120" height="70" rx="10" fill="#f3e8d8" stroke="#c47a3a" stroke-width="2"/>
+  <text x="320" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a2a33">Thread B</text>
+  <text x="320" y="110" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#5a6b73">holds M2</text>
+
+  <rect x="40" y="170" width="120" height="50" rx="8" fill="#eeeae3" stroke="#7a7268" stroke-width="1.5"/>
+  <text x="100" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Mutex M1</text>
+
+  <rect x="260" y="170" width="120" height="50" rx="8" fill="#eeeae3" stroke="#7a7268" stroke-width="1.5"/>
+  <text x="320" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Mutex M2</text>
+
+  <defs>
+    <marker id="d" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b33a3a"/>
+    </marker>
+  </defs>
+  <!-- A wants M2 -->
+  <path d="M160 95 H255" stroke="#b33a3a" stroke-width="1.8" marker-end="url(#d)"/>
+  <text x="205" y="88" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#b33a3a">wants M2</text>
+
+  <!-- B wants M1 -->
+  <path d="M260 115 H165" stroke="#b33a3a" stroke-width="1.8" marker-end="url(#d)"/>
+  <text x="210" y="138" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#b33a3a">wants M1</text>
+
+  <text x="210" y="248" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">Fix: acquire M1 then M2  always the same order</text>
+</svg>

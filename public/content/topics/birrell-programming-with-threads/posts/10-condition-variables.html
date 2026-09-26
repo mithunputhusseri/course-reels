@@ -1,0 +1,13 @@
+<span class="kicker">Scheduling resources</span>
+<h3>Condition variables</h3>
+<img src="__BASE__content/topics/birrell-programming-with-threads/assets/wait-signal-flow.svg" alt="Wait and Signal flow" />
+<p>A monitor = data + mutex + zero or more conditions. Always pair a condition with <em>one</em> mutex.</p>
+<ul>
+  <li><strong>Wait(m,c)</strong> — atomically unlock <code>m</code> and sleep on <code>c</code></li>
+  <li><strong>Signal(c)</strong> — wake ≥1 waiter (maybe more); no-op if none</li>
+  <li><strong>Broadcast(c)</strong> — wake <em>all</em> current waiters</li>
+  <li>Woken thread must <strong>re-lock m</strong> before Wait returns</li>
+</ul>
+<div class="callout">
+  <strong>Atomic Wait</strong> prevents the wake-up-waiting race: a signal can't sneak in between "decide to sleep" and "actually sleep."
+</div>

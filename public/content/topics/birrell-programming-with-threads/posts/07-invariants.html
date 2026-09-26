@@ -1,0 +1,17 @@
+<span class="kicker">Reasoning tool</span>
+<h3>Mutexes protect invariants</h3>
+<p>Think of the mutex as guarding a <strong>boolean invariant</strong> over the data:</p>
+<ul>
+  <li>True whenever the mutex is <em>not</em> held</li>
+  <li>True when you acquire — you may break it temporarily</li>
+  <li>Must be restored before unlock <em>and</em> before <code>Wait</code> (Wait unlocks!)</li>
+</ul>
+<p>For Insert: <em>i</em> is the first NIL index; everything after <em>i</em> is NIL.</p>
+<div class="chip-row">
+  <span class="chip">write it down</span>
+  <span class="chip">Larch (formal)</span>
+  <span class="chip">too complex? redesign</span>
+</div>
+<div class="callout">
+  <strong>Key:</strong> the invariant is the only assumption you may make on lock entry.
+</div>

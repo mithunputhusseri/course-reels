@@ -1,0 +1,12 @@
+<span class="kicker">Pitfall</span>
+<h3>The nested monitor problem</h3>
+<img src="__BASE__content/topics/birrell-programming-with-threads/assets/nested-monitor.svg" alt="Nested monitor deadlock" />
+<p><code>Wait</code> releases <em>only</em> the mutex you pass it — not every outer lock.</p>
+<ul>
+  <li>Get holds <code>a</code>, Wait on <code>b</code> → sleeps still holding <code>a</code></li>
+  <li>Give needs <code>a</code> to set <code>ready</code> and Signal → deadlock</li>
+  <li>Same hazard: hold high-level lock while calling a lower layer that blocks</li>
+</ul>
+<div class="callout">
+  <strong>Preferred fix:</strong> finish the outer LOCK before calling a potentially blocking lower layer.
+</div>

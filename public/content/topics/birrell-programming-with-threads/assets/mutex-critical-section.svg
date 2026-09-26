@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 260" role="img" aria-label="Mutex protects a critical section">
+  <rect width="440" height="260" fill="#f7f4ef"/>
+  <text x="220" y="24" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Mutex: one holder at a time</text>
+
+  <!-- Mutex lock icon -->
+  <rect x="170" y="42" width="100" height="36" rx="6" fill="#c47a3a" stroke="#8a5528" stroke-width="1.5"/>
+  <text x="220" y="65" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff">MUTEX m</text>
+
+  <!-- Critical section -->
+  <rect x="90" y="100" width="260" height="80" rx="10" fill="#f3e8d8" stroke="#c47a3a" stroke-width="2" stroke-dasharray="6 3"/>
+  <text x="220" y="128" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">LOCK m DO & END</text>
+  <text x="220" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#5a6b73">only the holder touches protected data</text>
+  <text x="220" y="168" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#5a6b73">invariant true on entry &amp; before exit</text>
+
+  <!-- Waiting threads -->
+  <rect x="40" y="200" width="70" height="32" rx="6" fill="#dceaf2" stroke="#3d7ea6" stroke-width="1.5"/>
+  <text x="75" y="220" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">A holds</text>
+
+  <rect x="185" y="200" width="70" height="32" rx="6" fill="#eeeae3" stroke="#7a7268" stroke-width="1.5"/>
+  <text x="220" y="220" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">B waits</text>
+
+  <rect x="330" y="200" width="70" height="32" rx="6" fill="#eeeae3" stroke="#7a7268" stroke-width="1.5"/>
+  <text x="365" y="220" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">C waits</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#5a6b73"/>
+    </marker>
+  </defs>
+  <path d="M220 78 V98" stroke="#5a6b73" stroke-width="1.8" marker-end="url(#arr)"/>
+</svg>

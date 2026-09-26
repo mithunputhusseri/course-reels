@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" role="img" aria-label="fork then exec flow">
+  <rect width="420" height="300" fill="#f7f4ef"/>
+  <text x="210" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">fork ’ exec (shell runs ls)</text>
+
+  <!-- Parent before -->
+  <rect x="30" y="50" width="120" height="70" rx="10" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
+  <text x="90" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a2a33">shell</text>
+  <text x="90" y="100" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#3d7ea6">fork()</text>
+
+  <!-- Arrow fork -->
+  <path d="M150 85 H190" stroke="#c47a3a" stroke-width="2" marker-end="url(#f)"/>
+  <text x="170" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#c47a3a">fork</text>
+
+  <!-- Two clones -->
+  <rect x="200" y="40" width="90" height="50" rx="8" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
+  <text x="245" y="70" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">parent</text>
+
+  <rect x="200" y="105" width="90" height="50" rx="8" fill="#e4f0e8" stroke="#2f8f74" stroke-width="2"/>
+  <text x="245" y="135" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">child</text>
+
+  <!-- exec arrow -->
+  <path d="M290 130 H330" stroke="#2f8f74" stroke-width="2" marker-end="url(#f2)"/>
+  <text x="310" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#2f8f74">exec</text>
+
+  <!-- ls -->
+  <rect x="335" y="105" width="60" height="50" rx="8" fill="#1a2a33"/>
+  <text x="365" y="135" text-anchor="middle" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#9ecfb8">ls</text>
+
+  <!-- Notes -->
+  <rect x="30" y="190" width="360" height="80" rx="10" fill="#fff" stroke="#c8c2b8"/>
+  <text x="50" y="218" font-family="system-ui,sans-serif" font-size="12" fill="#1a2a33">" fork: child = copy of parent (same code, new PCB)</text>
+  <text x="50" y="240" font-family="system-ui,sans-serif" font-size="12" fill="#1a2a33">" exec: wipe child's address space ’ load new program</text>
+  <text x="50" y="262" font-family="system-ui,sans-serif" font-size="12" fill="#1a2a33">" parent keeps being the shell</text>
+
+  <defs>
+    <marker id="f" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#c47a3a"/>
+    </marker>
+    <marker id="f2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2f8f74"/>
+    </marker>
+  </defs>
+</svg>

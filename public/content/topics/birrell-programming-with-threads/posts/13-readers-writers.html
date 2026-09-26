@@ -1,0 +1,14 @@
+<span class="kicker">Classic pattern</span>
+<h3>Readers / writers</h3>
+<img src="__BASE__content/topics/birrell-programming-with-threads/assets/readers-writers.svg" alt="Readers writers state encoding" />
+<pre>AcquireExclusive: WHILE i # 0 DO Wait END; i := -1
+AcquireShared:    WHILE i &lt; 0 DO Wait END; i := i+1
+ReleaseExclusive: i := 0; Broadcast   (* many readers *)
+ReleaseShared:    i := i-1; IF i=0 THEN Signal END</pre>
+<ul>
+  <li>Separate <code>cR</code>/<code>cW</code> cuts spurious wake-ups</li>
+  <li>Track <code>writeWaiters</code> so overlapping readers don't starve writers</li>
+</ul>
+<div class="callout">
+  <strong>Restraint:</strong> simple ~15 lines; "fair/tuned" ~30. Optimize only when load demands it.
+</div>

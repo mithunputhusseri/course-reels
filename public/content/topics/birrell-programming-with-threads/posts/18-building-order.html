@@ -1,0 +1,25 @@
+<span class="kicker">Build order</span>
+<h3>Useful → correct → live → efficient</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Useful</h4>
+    <p>Assume multi-threaded callers. Re-entrant APIs. No results in shared globals. Prefer sync calls.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Correct</h4>
+    <p>One mutex per datum. Predicate loops around Wait. Answers match the spec.</p>
+  </div>
+</div>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Live</h4>
+    <p>Eventually finishes. Avoid deadlock / infinite wait. Debugger must show all stacks + lock holders.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Efficient</h4>
+    <p>Measure lock conflicts &amp; runnable-thread counts. Never trade correctness for speed.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Quote the order:</strong> easier to speed up a correct program than to un-bug an "optimized" one.
+</div>
