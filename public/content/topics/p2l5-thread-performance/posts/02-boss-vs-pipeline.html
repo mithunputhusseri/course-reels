@@ -1,0 +1,15 @@
+<span class="kicker">Models</span>
+<h3>Boss-worker vs pipeline</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Boss-worker</h4>
+    <p>One coordinator hands whole tasks to workers. Simple mental model for request handling.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Pipeline</h4>
+    <p>Work moves through stages. Often wins on <em>total</em> execution time when stages overlap well.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Tradeoff:</strong> pipeline can finish sooner overall, but average time per stage may look worse.
+</div>

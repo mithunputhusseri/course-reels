@@ -1,0 +1,10 @@
+<span class="kicker">Case study</span>
+<h3>Apache mixes MP + MT</h3>
+<ul>
+  <li><strong>Core</strong> handles request/response plumbing</li>
+  <li><strong>Modules</strong> own logical flow — each request passes through them</li>
+</ul>
+<div class="callout">
+  <strong>Architecture:</strong> each process is a boss/worker with a dynamic thread pool. Process count can also auto-adjust.
+</div>
+<p>So Apache is not “pure MP” or “pure MT” — it combines both for concurrency and isolation.</p>

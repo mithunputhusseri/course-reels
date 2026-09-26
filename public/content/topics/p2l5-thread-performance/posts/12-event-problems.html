@@ -1,0 +1,11 @@
+<span class="kicker">Limits</span>
+<h3>Where event-driven breaks</h3>
+<ol>
+  <li>A blocking handler blocks the <em>entire</em> process</li>
+  <li>You need async I/O support from the kernel / devices</li>
+</ol>
+<div class="compare-card">
+  <h4>Async I/O idea</h4>
+  <p>Make a system call, let the OS learn where results go, then continue. Results arrive later via events. This fits the event-driven model cleanly.</p>
+</div>
+<p>If true async calls are unavailable, use helper processes/threads for blocking I/O only.</p>

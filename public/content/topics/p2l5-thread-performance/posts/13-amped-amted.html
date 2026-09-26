@@ -1,0 +1,14 @@
+<span class="kicker">Hybrids</span>
+<h3>AMPED and AMTED helpers</h3>
+<p>Helpers are dedicated to blocking I/O. They talk to the event dispatcher over pipes/sockets so <code>select</code>/<code>poll</code> still works.</p>
+<div class="chip-row">
+  <span class="chip">AMPED · helper processes</span>
+  <span class="chip">AMTED · helper threads</span>
+</div>
+<ul>
+  <li>Fixes portability limits of pure event-driven code</li>
+  <li>Smaller footprint than a full worker-thread pool</li>
+</ul>
+<div class="callout">
+  Still constrained by application shape and event routing on multi-CPU systems.
+</div>

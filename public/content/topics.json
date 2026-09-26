@@ -1,0 +1,98 @@
+{
+  "topics": [
+    {
+      "id": "p2l5-thread-performance",
+      "title": "Thread Performance",
+      "subtitle": "P2L5 · CS-6200",
+      "description": "Why threads help, how we measure performance, and how MP / MT / event-driven servers compare.",
+      "accent": "#2f8f74",
+      "posts": [
+        {
+          "id": "01-why-threads",
+          "title": "Why threads exist",
+          "file": "content/topics/p2l5-thread-performance/posts/01-why-threads.html"
+        },
+        {
+          "id": "02-boss-vs-pipeline",
+          "title": "Boss-worker vs pipeline",
+          "file": "content/topics/p2l5-thread-performance/posts/02-boss-vs-pipeline.html"
+        },
+        {
+          "id": "03-metrics-intro",
+          "title": "What is a metric?",
+          "file": "content/topics/p2l5-thread-performance/posts/03-metrics-intro.html"
+        },
+        {
+          "id": "04-testbeds",
+          "title": "Measuring with a testbed",
+          "file": "content/topics/p2l5-thread-performance/posts/04-testbeds.html"
+        },
+        {
+          "id": "05-are-threads-useful",
+          "title": "Are threads really useful?",
+          "file": "content/topics/p2l5-thread-performance/posts/05-are-threads-useful.html"
+        },
+        {
+          "id": "06-web-server-pipeline",
+          "title": "A simple web server",
+          "file": "content/topics/p2l5-thread-performance/posts/06-web-server-pipeline.html"
+        },
+        {
+          "id": "07-multiprocess",
+          "title": "Multi-process server",
+          "file": "content/topics/p2l5-thread-performance/posts/07-multiprocess.html"
+        },
+        {
+          "id": "08-multithreaded",
+          "title": "Multi-threaded server",
+          "file": "content/topics/p2l5-thread-performance/posts/08-multithreaded.html"
+        },
+        {
+          "id": "09-event-driven",
+          "title": "Event-driven model",
+          "file": "content/topics/p2l5-thread-performance/posts/09-event-driven.html"
+        },
+        {
+          "id": "10-why-events-work",
+          "title": "Why events can win",
+          "file": "content/topics/p2l5-thread-performance/posts/10-why-events-work.html"
+        },
+        {
+          "id": "11-select-poll",
+          "title": "Finding ready FDs",
+          "file": "content/topics/p2l5-thread-performance/posts/11-select-poll.html"
+        },
+        {
+          "id": "12-event-problems",
+          "title": "Event-driven pitfalls",
+          "file": "content/topics/p2l5-thread-performance/posts/12-event-problems.html"
+        },
+        {
+          "id": "13-amped-amted",
+          "title": "AMPED & AMTED helpers",
+          "file": "content/topics/p2l5-thread-performance/posts/13-amped-amted.html"
+        },
+        {
+          "id": "14-flash",
+          "title": "Flash web server",
+          "file": "content/topics/p2l5-thread-performance/posts/14-flash.html"
+        },
+        {
+          "id": "15-apache",
+          "title": "Apache architecture",
+          "file": "content/topics/p2l5-thread-performance/posts/15-apache.html"
+        },
+        {
+          "id": "16-comparison-setup",
+          "title": "Setting up a comparison",
+          "file": "content/topics/p2l5-thread-performance/posts/16-comparison-setup.html"
+        },
+        {
+          "id": "17-workloads-metrics",
+          "title": "Workloads & metrics",
+          "file": "content/topics/p2l5-thread-performance/posts/17-workloads-metrics.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<span class="kicker">I/O multiplexing</span>
+<h3>Events = activity on file descriptors</h3>
+<p>Sockets and files are both represented by file descriptors (FDs).</p>
+<p>An event is input (or readiness) on an FD. To find which FD is ready:</p>
+<pre>select()
+poll()
+epoll()</pre>
+<ul>
+  <li>Single address space &amp; flow of control</li>
+  <li>Smaller memory; no thread context switches</li>
+  <li>No synchronization between workers</li>
+</ul>
