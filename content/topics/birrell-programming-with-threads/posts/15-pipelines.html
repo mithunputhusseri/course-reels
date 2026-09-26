@@ -1,0 +1,13 @@
+<span class="kicker">Parallel work</span>
+<h3>Pipelines with Fork</h3>
+<img src="__BASE__content/topics/birrell-programming-with-threads/assets/pipeline-stages.svg" alt="PaintChar three-stage pipeline" />
+<p>Stages connected by producer–consumer queues; each stage is a thread.</p>
+<ul>
+  <li>Balanced 3-stage pipeline → up to 3 processors</li>
+  <li>Helps on 1 CPU when stages wait on I/O / faults</li>
+  <li>Throughput limited by the <strong>slowest</strong> stage</li>
+  <li>Static concurrency = # of stages (awkward when CPU count changes)</li>
+</ul>
+<div class="callout">
+  <strong>Capacity:</strong> many <em>blocked</em> threads are cheap; too many <em>runnable</em> threads thrash the scheduler.
+</div>

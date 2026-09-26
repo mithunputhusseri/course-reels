@@ -1,0 +1,16 @@
+<span class="kicker">Event-driven</span>
+<h3>One thread, many interleaved requests</h3>
+<ul>
+  <li>Single address space</li>
+  <li>Single process</li>
+  <li>Single thread of control</li>
+</ul>
+<p>A <strong>dispatcher</strong> acts like a state machine: on an event, jump to a handler.</p>
+<div class="chip-row">
+  <span class="chip">request received</span>
+  <span class="chip">send completed</span>
+  <span class="chip">disk read done</span>
+</div>
+<div class="callout">
+  <strong>Handlers</strong> run to completion. If they would block, they start the async op and return control to the dispatch loop.
+</div>

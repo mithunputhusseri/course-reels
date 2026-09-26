@@ -1,0 +1,12 @@
+<span class="kicker">Web servers</span>
+<h3>Steps in a simple web server</h3>
+<ol>
+  <li>Client / browser sends a request</li>
+  <li>Server accepts the connection</li>
+  <li>Server processes the request</li>
+  <li>Server responds with the file</li>
+</ol>
+<pre>accept → read → parse → find file
+→ compute header → send header
+→ read file → send data</pre>
+<p>Concurrency question: how do we run this pipeline for many clients at once?</p>

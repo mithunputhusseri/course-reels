@@ -1,0 +1,12 @@
+<span class="kicker">Birrell · 1989</span>
+<h3>What is a thread?</h3>
+<img src="__BASE__content/topics/birrell-programming-with-threads/assets/thread-address-space.svg" alt="Threads share one address space" />
+<p>A <strong>thread</strong> is one sequential flow of control — own PC, own stack, ordinary procedure calls.</p>
+<ul>
+  <li><strong>Shared</strong> — globals / heap in one address space</li>
+  <li><strong>Private</strong> — each thread's stack and locals</li>
+  <li><strong>Lightweight</strong> — create, sync, destroy cheap enough for everyday concurrency</li>
+</ul>
+<div class="callout">
+  <strong>Birrell's term:</strong> <em>process</em> = one flow tied 1:1 to an address space. A thread is a flow <em>inside</em> a shared space.
+</div>

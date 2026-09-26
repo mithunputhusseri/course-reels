@@ -1,0 +1,19 @@
+<span class="kicker">Extra toolkit</span>
+<h3>Up-calls, stamps &amp; work crews</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Up-calls</h4>
+    <p>Network packet climbs layers in <em>one</em> thread (no switch per layer). Don't hold a mutex across an up-call.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Version stamps</h4>
+    <p>Bump a counter when authoritative data changes; callers pass the stamp; mismatch → retry with fresh data.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Work crews</h4>
+    <p>Too much parallelism? Fixed worker pool + job queue — not one Fork per tiny task.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Embarrassment of parallelism:</strong> forking every statement/procedure can drown the scheduler — crews bound concurrency.
+</div>

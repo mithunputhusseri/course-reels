@@ -1,0 +1,13 @@
+<span class="kicker">Transitions</span>
+<h3>What moves a process between states</h3>
+<ul>
+  <li><strong>new → ready</strong> — admitted (resources granted)</li>
+  <li><strong>ready → running</strong> — scheduler dispatch</li>
+  <li><strong>running → ready</strong> — interrupt / time slice expired</li>
+  <li><strong>running → waiting</strong> — I/O or event wait</li>
+  <li><strong>waiting → ready</strong> — I/O / event completion</li>
+  <li><strong>running → terminated</strong> — exit</li>
+</ul>
+<div class="callout">
+  <strong>Exam lens:</strong> name the event, not just the arrow — e.g. "time slice expired" not only "back to ready."
+</div>

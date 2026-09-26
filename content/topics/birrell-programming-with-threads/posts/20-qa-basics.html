@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q1–Q2</span>
+<h3>Threads &amp; motivation</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q1</h4>
+    <p>What is shared vs private among threads in one address space?</p>
+    <p><strong>A:</strong> Shared: off-stack / global memory. Private: each thread's call stack and locals.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q2</h4>
+    <p>Name two ways concurrency helps even without many CPUs.</p>
+    <p><strong>A:</strong> Overlap slow-device waits; defer housekeeping to cut latency / keep UI responsive.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Check:</strong> lightweight = create/sync cheap enough for ordinary concurrency needs.
+</div>

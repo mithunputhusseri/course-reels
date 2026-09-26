@@ -1,0 +1,15 @@
+<span class="kicker">Cost</span>
+<h3>Context switches are expensive</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Direct cost</h4>
+    <p>CPU cycles to load/store registers and update PCBs</p>
+  </div>
+  <div class="compare-card">
+    <h4>Indirect cost</h4>
+    <p>Cold cache, TLB misses, pipeline flush — later work runs slower</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Design tension:</strong> switch often → responsive &amp; fair; switch rarely → less overhead, worse interactivity.
+</div>

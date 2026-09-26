@@ -1,0 +1,12 @@
+<span class="kicker">Monolithic</span>
+<h3>What lives in the kernel</h3>
+<ul>
+  <li><strong>Memory management</strong> — physical &amp; virtual memory</li>
+  <li><strong>Device drivers</strong> — disks, NICs, terminals, …</li>
+  <li><strong>File systems</strong> — random I/O and sequential streaming</li>
+  <li><strong>Process / thread mgmt</strong> — create, destroy, track contexts</li>
+  <li><strong>Scheduling</strong> — who runs on the CPU next</li>
+</ul>
+<div class="callout">
+  <strong>Pattern:</strong> if it’s a core OS service, a monolithic kernel usually owns it in-kernel.
+</div>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 220" role="img" aria-label="Three-stage PaintChar pipeline">
+  <rect width="460" height="220" fill="#f7f4ef"/>
+  <text x="230" y="24" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">PaintChar pipeline (Birrell)</text>
+
+  <rect x="20" y="55" width="100" height="70" rx="10" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
+  <text x="70" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Enqueue</text>
+  <text x="70" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#5a6b73">PaintChar</text>
+
+  <rect x="180" y="55" width="100" height="70" rx="10" fill="#e8f0e4" stroke="#2f8f74" stroke-width="2"/>
+  <text x="230" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Rasterize</text>
+  <text x="230" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#5a6b73">char to bitmap</text>
+
+  <rect x="340" y="55" width="100" height="70" rx="10" fill="#f3e8d8" stroke="#c47a3a" stroke-width="2"/>
+  <text x="390" y="85" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Painter</text>
+  <text x="390" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#5a6b73">draw bitmap</text>
+
+  <defs>
+    <marker id="p" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#5a6b73"/>
+    </marker>
+  </defs>
+  <path d="M120 90 H175" stroke="#5a6b73" stroke-width="1.8" marker-end="url(#p)"/>
+  <text x="148" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#5a6b73">queue</text>
+  <path d="M280 90 H335" stroke="#5a6b73" stroke-width="1.8" marker-end="url(#p)"/>
+  <text x="308" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#5a6b73">queue</text>
+
+  <text x="230" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#1a2a33">Up to 3 processors when stages are balanced</text>
+  <text x="230" y="182" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#5a6b73">Throughput ~ slowest stage; also helps on 1 CPU during I/O waits</text>
+  <text x="230" y="204" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#7a7268">Trade-off: fixed concurrency = number of stages</text>
+</svg>

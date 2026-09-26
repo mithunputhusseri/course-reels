@@ -1,0 +1,7 @@
+<span class="kicker">Virtual memory</span>
+<h3>Addresses are virtual, not DRAM</h3>
+<p>V0–Vmax do <em>not</em> map 1:1 onto physical RAM. The OS uses <strong>page tables</strong> to translate virtual → physical.</p>
+<img src="__BASE__content/topics/p2l2-process-management/assets/process-virtual-memory.svg" alt="Virtual address space mapped to physical DRAM frames through a page table" />
+<div class="callout">
+  <strong>Example:</strong> virtual <code>0x03c5</code> → physical <code>0x0f0f</code> via a page-table entry.
+</div>

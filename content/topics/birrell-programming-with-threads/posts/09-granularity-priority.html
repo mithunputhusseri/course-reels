@@ -1,0 +1,20 @@
+<span class="kicker">Performance</span>
+<h3>Granularity &amp; priority inversion</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Coarse lock</h4>
+    <p>Simple, fewer missed syncs. Unrelated ops serialize → contention.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Fine locks</h4>
+    <p>More parallelism (e.g. global open-table + per-file mutex). More proof burden.</p>
+  </div>
+</div>
+<ul>
+  <li>Don't hold a mutex across slow I/O / page faults if you can avoid it</li>
+  <li><strong>Priority inversion:</strong> high waits on lock held by low, while medium runs forever</li>
+  <li>Systemic fix: <em>priority inheritance</em> (SRC didn't provide it)</li>
+</ul>
+<div class="callout">
+  <strong>Birrell:</strong> locking as simple as possible — but no simpler.
+</div>

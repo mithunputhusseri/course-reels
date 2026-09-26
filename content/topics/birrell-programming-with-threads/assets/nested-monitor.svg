@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 280" role="img" aria-label="Nested monitor deadlock">
+  <rect width="440" height="280" fill="#f7f4ef"/>
+  <text x="220" y="24" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Nested monitor problem</text>
+
+  <rect x="30" y="50" width="170" height="160" rx="10" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
+  <text x="115" y="74" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a2a33">Get()</text>
+  <text x="45" y="100" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">LOCK a</text>
+  <text x="55" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">LOCK b</text>
+  <text x="65" y="140" font-family="system-ui,sans-serif" font-size="11" fill="#c47a3a">Wait(b, c)</text>
+  <text x="75" y="158" font-family="system-ui,sans-serif" font-size="10" fill="#5a6b73">releases b only</text>
+  <text x="45" y="182" font-family="system-ui,sans-serif" font-size="11" fill="#b33a3a">still holds a!</text>
+
+  <rect x="240" y="50" width="170" height="160" rx="10" fill="#f3e8d8" stroke="#c47a3a" stroke-width="2"/>
+  <text x="325" y="74" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a2a33">Give()</text>
+  <text x="255" y="100" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">needs LOCK a</text>
+  <text x="255" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">then LOCK b</text>
+  <text x="255" y="140" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">ready := TRUE</text>
+  <text x="255" y="160" font-family="system-ui,sans-serif" font-size="11" fill="#2f8f74">Signal(c)</text>
+  <text x="255" y="188" font-family="system-ui,sans-serif" font-size="11" fill="#b33a3a">blocked on a</text>
+
+  <text x="220" y="240" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#1a2a33">Wait never drops outer locks - signaler cannot enter</text>
+  <text x="220" y="262" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">Remedy: end outer LOCK before calling a blocking lower layer</text>
+</svg>

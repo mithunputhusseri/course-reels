@@ -1,0 +1,11 @@
+<span class="kicker">Protection</span>
+<h3>Page tables keep memory simple and safe</h3>
+<ul>
+  <li><strong>Address space</strong> — in-memory view of a process</li>
+  <li><strong>Sparse layout</strong> — not all of V0–Vmax is mapped; gaps are normal</li>
+  <li><strong>Demand paging</strong> — pages may live in RAM or on disk until used</li>
+  <li><strong>Protection</strong> — OS checks whether an access is allowed</li>
+</ul>
+<div class="callout">
+  <strong>Key:</strong> each process thinks it owns a private contiguous space; the MMU + page tables make that illusion real.
+</div>

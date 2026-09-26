@@ -1,0 +1,19 @@
+<span class="kicker">Wake policy</span>
+<h3>Signal vs Broadcast</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Signal</h4>
+    <p>At most one waiter can usefully proceed (e.g. last reader leaves → one writer).</p>
+  </div>
+  <div class="compare-card">
+    <h4>Broadcast</h4>
+    <p>Several waiters may proceed, or you group wait reasons on one condition for simpler code.</p>
+  </div>
+</div>
+<ul>
+  <li>With predicate loops, Broadcast may replace Signal safely — only cost is extra wake-ups</li>
+  <li>Often better: decide under the lock, <strong>Signal after unlock</strong> (avoids wake-then-block on m)</li>
+</ul>
+<div class="callout">
+  <strong>Birrell's favorite micro-opt:</strong> move Signal outside the LOCK when no protected state is needed afterward.
+</div>

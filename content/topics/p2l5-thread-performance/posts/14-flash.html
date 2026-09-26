@@ -1,0 +1,13 @@
+<span class="kicker">Case study</span>
+<h3>Flash: event-driven + AMPED helpers</h3>
+<ul>
+  <li>Event-driven web server (AMPED)</li>
+  <li>Asymmetric helpers for disk reads</li>
+  <li>Pipes between helpers and dispatcher</li>
+  <li>Helpers map files (<code>mmap</code>); dispatcher checks residency (<code>mincore</code>)</li>
+</ul>
+<p>If pages are already in memory, handle locally — otherwise send work to a helper. That can save a lot.</p>
+<div class="compare-card">
+  <h4>Extra optimizations</h4>
+  <p>Response-header cache, pathname translation cache, mapped-file cache, DMA alignment, scatter-gather, vector I/O.</p>
+</div>

@@ -1,0 +1,13 @@
+<span class="kicker">Linux</span>
+<h3>Layers from user to hardware</h3>
+<ol>
+  <li><strong>Users / apps</strong> — people and programs</li>
+  <li><strong>Standard utilities</strong> — shell, editors, compilers</li>
+  <li><strong>C library</strong> — <code>open</code>, <code>read</code>, <code>write</code>, <code>fork</code>, …</li>
+  <li><strong>System-call interface</strong> — crosses into kernel mode</li>
+  <li><strong>Linux kernel</strong> — process, memory, FS, I/O, …</li>
+  <li><strong>Hardware</strong> — CPU, memory, disks, terminals</li>
+</ol>
+<div class="callout">
+  <strong>Key boundary:</strong> libc wraps syscalls; the kernel owns privileged work below that line.
+</div>

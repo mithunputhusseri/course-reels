@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q3–Q4</span>
+<h3>PCB &amp; context switch</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q3</h4>
+    <p>While P1 runs, where do its register values live? After a switch to P2, where is P1's state?</p>
+    <p><strong>A:</strong> In the CPU while running; saved into <strong>PCB.P1</strong> when preempted.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q4</h4>
+    <p>Name one direct and one indirect cost of a context switch.</p>
+    <p><strong>A:</strong> Direct: register save/restore cycles. Indirect: cold cache / TLB misses / pipeline flush.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Check:</strong> save → schedule → restore → resume.
+</div>

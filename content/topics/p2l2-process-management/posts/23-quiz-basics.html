@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q1–Q2</span>
+<h3>Programs, processes &amp; memory</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q1</h4>
+    <p>You run the same binary three times. How many processes? How many address spaces?</p>
+    <p><strong>A:</strong> Three processes, each with its own address space (and PCB).</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q2</h4>
+    <p>Which segment typically holds return addresses and local variables? Which grows with <code>malloc</code>?</p>
+    <p><strong>A:</strong> Stack for frames/locals; heap for dynamic allocation. They grow toward each other.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Check:</strong> program ≠ process; text/data load early; heap/stack change at runtime.
+</div>

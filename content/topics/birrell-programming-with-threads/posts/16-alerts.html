@@ -1,0 +1,16 @@
+<span class="kicker">Cancellation</span>
+<h3>Alerts: diverting control</h3>
+<p>Alerts unwind a long wait or computation (CANCEL a query; stop losing parallel search).</p>
+<ul>
+  <li><code>Alert(t)</code> — set pending bit; wake if in <code>AlertWait</code></li>
+  <li>Long waits → <code>AlertWait</code>; long loops → periodic <code>TestAlert</code></li>
+  <li>SRC convention: only alert threads <strong>you</strong> forked (≈ "please terminate")</li>
+  <li>Prefer a boolean + Signal when you know the condition</li>
+</ul>
+<pre>TRY
+  WHILE empty DO AlertWait(m, nonEmpty) END;
+  RETURN NextChar()
+EXCEPT Alerted: RETURN EndOfFile END;</pre>
+<div class="callout">
+  <strong>Warning:</strong> alerts weaken local reasoning — use sparingly or code becomes unreadable.
+</div>

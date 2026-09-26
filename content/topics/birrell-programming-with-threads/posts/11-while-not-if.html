@@ -1,0 +1,17 @@
+<span class="kicker">Golden rule</span>
+<h3>Always WHILE, never IF</h3>
+<pre>LOCK m DO
+  WHILE head = NIL DO
+    Thread.Wait(m, nonEmpty)
+  END;
+  topElement := head;
+  head := head^.next;
+END;</pre>
+<ul>
+  <li>Signal doesn't hand you the mutex next — another consumer may steal the item</li>
+  <li>SRC may awaken <em>extra</em> waiters for efficiency</li>
+  <li>The loop makes the postcondition locally obvious</li>
+</ul>
+<div class="callout">
+  <strong>Mesa-style (SRC):</strong> Signal is a <em>hint</em> to recheck. Hoare's stronger handoff could skip the retest — SRC prefers simpler impl + cheap WHILE.
+</div>

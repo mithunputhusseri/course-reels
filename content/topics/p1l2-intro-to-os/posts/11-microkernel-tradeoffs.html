@@ -1,0 +1,15 @@
+<span class="kicker">Microkernel</span>
+<h3>Isolation vs IPC cost</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Wins</h4>
+    <p>Tiny trusted computing base. Easier to verify. A crashing FS or driver need not take down the machine.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Costs</h4>
+    <p>Extra IPC and mode switches. Harder to build efficient user-level servers. Portability still non-trivial.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Tradeoff:</strong> reliability and verifiability rise; common-path performance often falls vs monolithic.
+</div>

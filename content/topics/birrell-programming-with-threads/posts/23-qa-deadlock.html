@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q7–Q8</span>
+<h3>Deadlock &amp; nested monitors</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q7</h4>
+    <p>How does a partial lock order prevent A/B circular deadlock on M1 and M2?</p>
+    <p><strong>A:</strong> Every thread that needs both acquires them in the same order, so a wait cycle can't form.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q8</h4>
+    <p>In nested Get/Give, Get Waits on b while holding a. Why can't Give unblock it?</p>
+    <p><strong>A:</strong> Wait released only b; Get still holds a. Give needs a before it can set ready and Signal.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Remedy:</strong> end the outer LOCK before calling a blocking lower layer.
+</div>

@@ -1,0 +1,19 @@
+<span class="kicker">Race classic</span>
+<h3>The unprotected Insert bug</h3>
+<p>Without a lock, two threads can both write <code>table[i]</code> before either increments <code>i</code>:</p>
+<pre>(* BAD — no LOCK *)
+table[i] := r;   (* 1 *)
+i := i + 1;      (* 2 *)</pre>
+<ul>
+  <li>One value is <strong>lost</strong> (overwritten)</li>
+  <li>Two increments leave an <strong>orphaned NIL</strong> slot</li>
+  <li>Timing depends on page faults, timers, true MP asynchrony</li>
+</ul>
+<pre>(* FIXED *)
+LOCK m DO
+  table[i] := r;
+  i := i + 1;
+END;</pre>
+<div class="callout">
+  <strong>Birrell prefers:</strong> an obvious deadlock over a silent wrong answer.
+</div>

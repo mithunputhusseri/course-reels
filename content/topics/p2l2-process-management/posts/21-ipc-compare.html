@@ -1,0 +1,15 @@
+<span class="kicker">Compare</span>
+<h3>Message passing vs shared memory</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Message passing</h4>
+    <p>Data via OS channel (copies). High OS involvement. Often simpler API. Stronger isolation. Higher overhead.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Shared memory</h4>
+    <p>Direct in shared pages. OS mainly at setup. Needs careful sync. Weaker isolation. Usually faster.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Pick:</strong> safety &amp; simplicity → messages; raw throughput → shared memory (+ your own sync).
+</div>

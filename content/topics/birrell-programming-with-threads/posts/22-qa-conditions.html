@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q5–Q6</span>
+<h3>Conditions &amp; Mesa style</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q5</h4>
+    <p>Why is Wait's unlock+block atomic? What race does it prevent?</p>
+    <p><strong>A:</strong> Prevents a signal between deciding to sleep and sleeping (wake-up-waiting race) — the wake would be lost.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q6</h4>
+    <p>Why <code>WHILE</code> not <code>IF</code> after Wait? How do SRC semantics differ from Hoare's?</p>
+    <p><strong>A:</strong> Another thread may take the resource; Signal may wake extras. SRC/Mesa = hint + recheck; Hoare handoff could skip retest.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Check:</strong> Broadcast can replace Signal for correctness if every waiter uses a predicate loop.
+</div>

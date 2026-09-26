@@ -1,0 +1,11 @@
+<span class="kicker">Hardware + OS</span>
+<h3>How the OS tracks what a process is doing</h3>
+<ul>
+  <li><strong>Program counter (PC)</strong> — next instruction address</li>
+  <li><strong>CPU registers</strong> — working values while running</li>
+  <li><strong>Stack pointer (SP)</strong> — top of the current stack</li>
+  <li><strong>PCB</strong> — kernel snapshot of the full process</li>
+</ul>
+<div class="callout">
+  <strong>Key:</strong> while a process runs, state lives in CPU registers; when it stops, that state is saved into its PCB.
+</div>

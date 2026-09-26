@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q5–Q6</span>
+<h3>Lifecycle &amp; scheduling</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q5</h4>
+    <p>A process issues a disk read. Which state does it enter? What event returns it to ready?</p>
+    <p><strong>A:</strong> <strong>Waiting</strong> (blocked). I/O completion moves it back to <strong>ready</strong>.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q6</h4>
+    <p>If \(T_p = T_s\), roughly what CPU efficiency do you get? Why is that bad?</p>
+    <p><strong>A:</strong> ~50%. Half the time is switch/scheduler overhead — too much thrashing relative to useful work.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Check:</strong> only ready processes are dispatch candidates; efficiency ≈ \(T_p/(T_p+T_s)\).
+</div>

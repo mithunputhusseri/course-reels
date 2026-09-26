@@ -1,0 +1,465 @@
+{
+  "topics": [
+    {
+      "id": "p1l2-intro-to-os",
+      "title": "Intro to OS Architectures",
+      "subtitle": "P1L2 · CS-6200",
+      "description": "Monolithic, modular, and microkernel designs — plus how Linux and macOS put them into practice.",
+      "accent": "#c47a3a",
+      "posts": [
+        {
+          "id": "01-design-tradeoff",
+          "title": "Performance vs flexibility",
+          "file": "content/topics/p1l2-intro-to-os/posts/01-design-tradeoff.html"
+        },
+        {
+          "id": "02-three-architectures",
+          "title": "Three classic designs",
+          "file": "content/topics/p1l2-intro-to-os/posts/02-three-architectures.html"
+        },
+        {
+          "id": "03-monolithic-os",
+          "title": "Monolithic OS",
+          "file": "content/topics/p1l2-intro-to-os/posts/03-monolithic-os.html"
+        },
+        {
+          "id": "04-monolithic-components",
+          "title": "What's in the kernel",
+          "file": "content/topics/p1l2-intro-to-os/posts/04-monolithic-components.html"
+        },
+        {
+          "id": "05-monolithic-tradeoffs",
+          "title": "Monolithic pros & cons",
+          "file": "content/topics/p1l2-intro-to-os/posts/05-monolithic-tradeoffs.html"
+        },
+        {
+          "id": "06-modular-os",
+          "title": "Modular OS",
+          "file": "content/topics/p1l2-intro-to-os/posts/06-modular-os.html"
+        },
+        {
+          "id": "07-modular-ideas",
+          "title": "Modular customization",
+          "file": "content/topics/p1l2-intro-to-os/posts/07-modular-ideas.html"
+        },
+        {
+          "id": "08-monolithic-vs-modular",
+          "title": "Monolithic vs modular",
+          "file": "content/topics/p1l2-intro-to-os/posts/08-monolithic-vs-modular.html"
+        },
+        {
+          "id": "09-microkernel",
+          "title": "Microkernel idea",
+          "file": "content/topics/p1l2-intro-to-os/posts/09-microkernel.html"
+        },
+        {
+          "id": "10-microkernel-primitives",
+          "title": "Microkernel primitives",
+          "file": "content/topics/p1l2-intro-to-os/posts/10-microkernel-primitives.html"
+        },
+        {
+          "id": "11-microkernel-tradeoffs",
+          "title": "Microkernel pros & cons",
+          "file": "content/topics/p1l2-intro-to-os/posts/11-microkernel-tradeoffs.html"
+        },
+        {
+          "id": "12-architecture-scorecard",
+          "title": "Architecture scorecard",
+          "file": "content/topics/p1l2-intro-to-os/posts/12-architecture-scorecard.html"
+        },
+        {
+          "id": "13-linux-modular-monolithic",
+          "title": "Linux architecture",
+          "file": "content/topics/p1l2-intro-to-os/posts/13-linux-modular-monolithic.html"
+        },
+        {
+          "id": "14-linux-layers",
+          "title": "Linux layers",
+          "file": "content/topics/p1l2-intro-to-os/posts/14-linux-layers.html"
+        },
+        {
+          "id": "15-linux-internals",
+          "title": "Linux kernel internals",
+          "file": "content/topics/p1l2-intro-to-os/posts/15-linux-internals.html"
+        },
+        {
+          "id": "16-macos-hybrid",
+          "title": "macOS hybrid",
+          "file": "content/topics/p1l2-intro-to-os/posts/16-macos-hybrid.html"
+        },
+        {
+          "id": "17-macos-layers",
+          "title": "macOS layers",
+          "file": "content/topics/p1l2-intro-to-os/posts/17-macos-layers.html"
+        },
+        {
+          "id": "18-takeaways",
+          "title": "Quick takeaways",
+          "file": "content/topics/p1l2-intro-to-os/posts/18-takeaways.html"
+        }
+      ]
+    },
+    {
+      "id": "p2l2-process-management",
+      "title": "Process and Process Management",
+      "subtitle": "P2L2 · CS-6200",
+      "description": "What a process is, address spaces, PCBs, context switches, lifecycle, scheduling, and IPC.",
+      "accent": "#3d7ea6",
+      "posts": [
+        {
+          "id": "01-program-vs-process",
+          "title": "Program vs process",
+          "file": "content/topics/p2l2-process-management/posts/01-program-vs-process.html"
+        },
+        {
+          "id": "02-whats-inside",
+          "title": "What's inside a process",
+          "file": "content/topics/p2l2-process-management/posts/02-whats-inside.html"
+        },
+        {
+          "id": "03-memory-layout",
+          "title": "Memory layout",
+          "file": "content/topics/p2l2-process-management/posts/03-memory-layout.html"
+        },
+        {
+          "id": "04-memory-segments",
+          "title": "Text, data, heap, stack",
+          "file": "content/topics/p2l2-process-management/posts/04-memory-segments.html"
+        },
+        {
+          "id": "05-virtual-memory",
+          "title": "Virtual memory",
+          "file": "content/topics/p2l2-process-management/posts/05-virtual-memory.html"
+        },
+        {
+          "id": "06-page-tables",
+          "title": "Page tables & protection",
+          "file": "content/topics/p2l2-process-management/posts/06-page-tables.html"
+        },
+        {
+          "id": "07-execution-state",
+          "title": "Tracking execution state",
+          "file": "content/topics/p2l2-process-management/posts/07-execution-state.html"
+        },
+        {
+          "id": "08-pcb",
+          "title": "Process Control Block",
+          "file": "content/topics/p2l2-process-management/posts/08-pcb.html"
+        },
+        {
+          "id": "09-context-switch",
+          "title": "Context switch",
+          "file": "content/topics/p2l2-process-management/posts/09-context-switch.html"
+        },
+        {
+          "id": "10-context-switch-cost",
+          "title": "Context switch cost",
+          "file": "content/topics/p2l2-process-management/posts/10-context-switch-cost.html"
+        },
+        {
+          "id": "11-process-lifecycle",
+          "title": "Process lifecycle",
+          "file": "content/topics/p2l2-process-management/posts/11-process-lifecycle.html"
+        },
+        {
+          "id": "12-state-transitions",
+          "title": "State transitions",
+          "file": "content/topics/p2l2-process-management/posts/12-state-transitions.html"
+        },
+        {
+          "id": "13-process-creation",
+          "title": "Process creation tree",
+          "file": "content/topics/p2l2-process-management/posts/13-process-creation.html"
+        },
+        {
+          "id": "14-fork-and-exec",
+          "title": "fork and exec",
+          "file": "content/topics/p2l2-process-management/posts/14-fork-and-exec.html"
+        },
+        {
+          "id": "15-cpu-scheduler",
+          "title": "CPU scheduler",
+          "file": "content/topics/p2l2-process-management/posts/15-cpu-scheduler.html"
+        },
+        {
+          "id": "16-time-slice-efficiency",
+          "title": "Time slice efficiency",
+          "file": "content/topics/p2l2-process-management/posts/16-time-slice-efficiency.html"
+        },
+        {
+          "id": "17-io-and-queues",
+          "title": "I/O and queues",
+          "file": "content/topics/p2l2-process-management/posts/17-io-and-queues.html"
+        },
+        {
+          "id": "18-ipc-goals",
+          "title": "IPC goals",
+          "file": "content/topics/p2l2-process-management/posts/18-ipc-goals.html"
+        },
+        {
+          "id": "19-message-passing",
+          "title": "Message-passing IPC",
+          "file": "content/topics/p2l2-process-management/posts/19-message-passing.html"
+        },
+        {
+          "id": "20-shared-memory",
+          "title": "Shared-memory IPC",
+          "file": "content/topics/p2l2-process-management/posts/20-shared-memory.html"
+        },
+        {
+          "id": "21-ipc-compare",
+          "title": "IPC comparison",
+          "file": "content/topics/p2l2-process-management/posts/21-ipc-compare.html"
+        },
+        {
+          "id": "22-takeaways",
+          "title": "Quick takeaways",
+          "file": "content/topics/p2l2-process-management/posts/22-takeaways.html"
+        },
+        {
+          "id": "23-quiz-basics",
+          "title": "Quiz: basics",
+          "file": "content/topics/p2l2-process-management/posts/23-quiz-basics.html"
+        },
+        {
+          "id": "24-quiz-pcb-switch",
+          "title": "Quiz: PCB & switch",
+          "file": "content/topics/p2l2-process-management/posts/24-quiz-pcb-switch.html"
+        },
+        {
+          "id": "25-quiz-lifecycle-sched",
+          "title": "Quiz: lifecycle & sched",
+          "file": "content/topics/p2l2-process-management/posts/25-quiz-lifecycle-sched.html"
+        },
+        {
+          "id": "26-quiz-fork-ipc",
+          "title": "Quiz: fork & IPC",
+          "file": "content/topics/p2l2-process-management/posts/26-quiz-fork-ipc.html"
+        }
+      ]
+    },
+    {
+      "id": "p2l5-thread-performance",
+      "title": "Thread Performance",
+      "subtitle": "P2L5 · CS-6200",
+      "description": "Why threads help, how we measure performance, and how MP / MT / event-driven servers compare.",
+      "accent": "#2f8f74",
+      "posts": [
+        {
+          "id": "01-why-threads",
+          "title": "Why threads exist",
+          "file": "content/topics/p2l5-thread-performance/posts/01-why-threads.html"
+        },
+        {
+          "id": "02-boss-vs-pipeline",
+          "title": "Boss-worker vs pipeline",
+          "file": "content/topics/p2l5-thread-performance/posts/02-boss-vs-pipeline.html"
+        },
+        {
+          "id": "03-metrics-intro",
+          "title": "What is a metric?",
+          "file": "content/topics/p2l5-thread-performance/posts/03-metrics-intro.html"
+        },
+        {
+          "id": "04-testbeds",
+          "title": "Measuring with a testbed",
+          "file": "content/topics/p2l5-thread-performance/posts/04-testbeds.html"
+        },
+        {
+          "id": "05-are-threads-useful",
+          "title": "Are threads really useful?",
+          "file": "content/topics/p2l5-thread-performance/posts/05-are-threads-useful.html"
+        },
+        {
+          "id": "06-web-server-pipeline",
+          "title": "A simple web server",
+          "file": "content/topics/p2l5-thread-performance/posts/06-web-server-pipeline.html"
+        },
+        {
+          "id": "07-multiprocess",
+          "title": "Multi-process server",
+          "file": "content/topics/p2l5-thread-performance/posts/07-multiprocess.html"
+        },
+        {
+          "id": "08-multithreaded",
+          "title": "Multi-threaded server",
+          "file": "content/topics/p2l5-thread-performance/posts/08-multithreaded.html"
+        },
+        {
+          "id": "09-event-driven",
+          "title": "Event-driven model",
+          "file": "content/topics/p2l5-thread-performance/posts/09-event-driven.html"
+        },
+        {
+          "id": "10-why-events-work",
+          "title": "Why events can win",
+          "file": "content/topics/p2l5-thread-performance/posts/10-why-events-work.html"
+        },
+        {
+          "id": "11-select-poll",
+          "title": "Finding ready FDs",
+          "file": "content/topics/p2l5-thread-performance/posts/11-select-poll.html"
+        },
+        {
+          "id": "12-event-problems",
+          "title": "Event-driven pitfalls",
+          "file": "content/topics/p2l5-thread-performance/posts/12-event-problems.html"
+        },
+        {
+          "id": "13-amped-amted",
+          "title": "AMPED & AMTED helpers",
+          "file": "content/topics/p2l5-thread-performance/posts/13-amped-amted.html"
+        },
+        {
+          "id": "14-flash",
+          "title": "Flash web server",
+          "file": "content/topics/p2l5-thread-performance/posts/14-flash.html"
+        },
+        {
+          "id": "15-apache",
+          "title": "Apache architecture",
+          "file": "content/topics/p2l5-thread-performance/posts/15-apache.html"
+        },
+        {
+          "id": "16-comparison-setup",
+          "title": "Setting up a comparison",
+          "file": "content/topics/p2l5-thread-performance/posts/16-comparison-setup.html"
+        },
+        {
+          "id": "17-workloads-metrics",
+          "title": "Workloads & metrics",
+          "file": "content/topics/p2l5-thread-performance/posts/17-workloads-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "birrell-programming-with-threads",
+      "title": "Programming with Threads",
+      "subtitle": "Birrell · 1989",
+      "description": "Andrew Birrell's classic guide: mutexes, conditions, Fork, alerts, pipelines — plus exam-ready Q&A.",
+      "accent": "#b85c38",
+      "posts": [
+        {
+          "id": "01-what-is-a-thread",
+          "title": "What is a thread?",
+          "file": "content/topics/birrell-programming-with-threads/posts/01-what-is-a-thread.html"
+        },
+        {
+          "id": "02-why-concurrency",
+          "title": "Why use concurrency?",
+          "file": "content/topics/birrell-programming-with-threads/posts/02-why-concurrency.html"
+        },
+        {
+          "id": "03-four-mechanisms",
+          "title": "Four core mechanisms",
+          "file": "content/topics/birrell-programming-with-threads/posts/03-four-mechanisms.html"
+        },
+        {
+          "id": "04-fork-and-join",
+          "title": "Fork and Join",
+          "file": "content/topics/birrell-programming-with-threads/posts/04-fork-and-join.html"
+        },
+        {
+          "id": "05-mutex-and-lock",
+          "title": "Mutex and LOCK",
+          "file": "content/topics/birrell-programming-with-threads/posts/05-mutex-and-lock.html"
+        },
+        {
+          "id": "06-unprotected-insert",
+          "title": "The Insert race",
+          "file": "content/topics/birrell-programming-with-threads/posts/06-unprotected-insert.html"
+        },
+        {
+          "id": "07-invariants",
+          "title": "Mutex invariants",
+          "file": "content/topics/birrell-programming-with-threads/posts/07-invariants.html"
+        },
+        {
+          "id": "08-deadlock-lock-order",
+          "title": "Deadlock & lock order",
+          "file": "content/topics/birrell-programming-with-threads/posts/08-deadlock-lock-order.html"
+        },
+        {
+          "id": "09-granularity-priority",
+          "title": "Granularity & priority",
+          "file": "content/topics/birrell-programming-with-threads/posts/09-granularity-priority.html"
+        },
+        {
+          "id": "10-condition-variables",
+          "title": "Condition variables",
+          "file": "content/topics/birrell-programming-with-threads/posts/10-condition-variables.html"
+        },
+        {
+          "id": "11-while-not-if",
+          "title": "WHILE, not IF",
+          "file": "content/topics/birrell-programming-with-threads/posts/11-while-not-if.html"
+        },
+        {
+          "id": "12-signal-vs-broadcast",
+          "title": "Signal vs Broadcast",
+          "file": "content/topics/birrell-programming-with-threads/posts/12-signal-vs-broadcast.html"
+        },
+        {
+          "id": "13-readers-writers",
+          "title": "Readers / writers",
+          "file": "content/topics/birrell-programming-with-threads/posts/13-readers-writers.html"
+        },
+        {
+          "id": "14-nested-monitor",
+          "title": "Nested monitor problem",
+          "file": "content/topics/birrell-programming-with-threads/posts/14-nested-monitor.html"
+        },
+        {
+          "id": "15-pipelines",
+          "title": "Pipelines with Fork",
+          "file": "content/topics/birrell-programming-with-threads/posts/15-pipelines.html"
+        },
+        {
+          "id": "16-alerts",
+          "title": "Alerts & cancellation",
+          "file": "content/topics/birrell-programming-with-threads/posts/16-alerts.html"
+        },
+        {
+          "id": "17-extra-techniques",
+          "title": "Up-calls & work crews",
+          "file": "content/topics/birrell-programming-with-threads/posts/17-extra-techniques.html"
+        },
+        {
+          "id": "18-building-order",
+          "title": "Useful → correct → live",
+          "file": "content/topics/birrell-programming-with-threads/posts/18-building-order.html"
+        },
+        {
+          "id": "19-rules-cheat-sheet",
+          "title": "Rules cheat sheet",
+          "file": "content/topics/birrell-programming-with-threads/posts/19-rules-cheat-sheet.html"
+        },
+        {
+          "id": "20-qa-basics",
+          "title": "Q&A: threads & motivation",
+          "file": "content/topics/birrell-programming-with-threads/posts/20-qa-basics.html"
+        },
+        {
+          "id": "21-qa-mutex",
+          "title": "Q&A: mutexes & invariants",
+          "file": "content/topics/birrell-programming-with-threads/posts/21-qa-mutex.html"
+        },
+        {
+          "id": "22-qa-conditions",
+          "title": "Q&A: conditions",
+          "file": "content/topics/birrell-programming-with-threads/posts/22-qa-conditions.html"
+        },
+        {
+          "id": "23-qa-deadlock",
+          "title": "Q&A: deadlock",
+          "file": "content/topics/birrell-programming-with-threads/posts/23-qa-deadlock.html"
+        },
+        {
+          "id": "24-qa-fork-alerts",
+          "title": "Q&A: Fork & alerts",
+          "file": "content/topics/birrell-programming-with-threads/posts/24-qa-fork-alerts.html"
+        }
+      ]
+    }
+  ]
+}

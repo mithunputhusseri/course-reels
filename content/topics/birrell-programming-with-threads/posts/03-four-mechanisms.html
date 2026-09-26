@@ -1,0 +1,26 @@
+<span class="kicker">Facility design</span>
+<h3>Four core mechanisms</h3>
+<p>SRC/Topaz (and most modern thread APIs) cover the same four jobs:</p>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Create</h4>
+    <p><code>Fork</code> / <code>Join</code></p>
+  </div>
+  <div class="compare-card">
+    <h4>Exclude</h4>
+    <p><code>Mutex</code> + <code>LOCK</code></p>
+  </div>
+</div>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Wait for events</h4>
+    <p><code>Condition</code>, Wait / Signal / Broadcast</p>
+  </div>
+  <div class="compare-card">
+    <h4>Escape a wait</h4>
+    <p><code>Alert</code> family (cancellation)</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Thesis:</strong> concurrency is manageable when primitives are good and shared data is disciplined.
+</div>

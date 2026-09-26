@@ -1,0 +1,17 @@
+<span class="kicker">Practice · Q7–Q8</span>
+<h3>fork/exec &amp; IPC</h3>
+<div class="stack">
+  <div class="compare-card">
+    <h4>Q7</h4>
+    <p>A shell runs <code>ls</code>. Which call creates the child? Which replaces the child's image with <code>ls</code>?</p>
+    <p><strong>A:</strong> <code>fork</code> creates the child; <code>exec</code> loads <code>ls</code> into that child.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Q8</h4>
+    <p>When is shared memory preferred over message passing? What's the main risk?</p>
+    <p><strong>A:</strong> Prefer when you need high throughput / low copy cost. Risk: apps must implement correct synchronization.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Check:</strong> fork clones; exec morphs. Messages = OS-mediated; shared mem = fast but sync-heavy.
+</div>

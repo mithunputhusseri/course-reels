@@ -1,0 +1,16 @@
+<span class="kicker">Cheat sheet</span>
+<h3>Rules worth tattooing</h3>
+<ul>
+  <li>Protect every shared mutable datum — one clear mutex</li>
+  <li>Mutex = invariant; restore before unlock / Wait</li>
+  <li>Acquire locks in a consistent partial order</li>
+  <li>Keep critical sections short; rare conflicts</li>
+  <li><code>WHILE NOT pred DO Wait</code> — always</li>
+  <li>Signal if ≤1 can proceed; Broadcast if many / simpler</li>
+  <li>Often Signal <em>after</em> unlock</li>
+  <li>Fork for real work; bound runnable threads</li>
+  <li>Alert sparingly; only threads you created</li>
+</ul>
+<div class="callout">
+  <strong>Closing:</strong> concurrent programming need not be exotic — good primitives + discipline beat cleverness.
+</div>

@@ -1,0 +1,15 @@
+<span class="kicker">Monolithic</span>
+<h3>Fast paths, big blast radius</h3>
+<div class="compare">
+  <div class="compare-card">
+    <h4>Wins</h4>
+    <p>One integrated binary. Components call each other as normal functions — no IPC hop. Low overhead on syscalls, I/O, scheduling.</p>
+  </div>
+  <div class="compare-card">
+    <h4>Costs</h4>
+    <p>Hard to customize or port. Huge codebase; one bug can crash the machine. Full kernel loaded even if you need only a subset.</p>
+  </div>
+</div>
+<div class="callout">
+  <strong>Key:</strong> direct in-kernel calls buy speed; shared address space loses isolation.
+</div>

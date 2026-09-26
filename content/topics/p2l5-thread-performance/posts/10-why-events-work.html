@@ -1,0 +1,8 @@
+<span class="kicker">Insight</span>
+<h3>Why the event model can beat threads</h3>
+<p>MP / MT give roughly <em>one request per execution context</em>.</p>
+<p>Event-driven interleaves <em>many requests in one context</em>.</p>
+<div class="callout">
+  <strong>On 1 CPU:</strong> if there is no idle time, context switching just wastes cycles. Events process until a wait is needed, then switch requests without a full thread switch.
+</div>
+<p>On multi-CPU machines: run multiple event-driven processes.</p>
