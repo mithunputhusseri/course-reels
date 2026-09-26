@@ -23,7 +23,7 @@ course-reels/
 │   └── topics/<topic-id>/posts/    # HTML post fragments
 ├── src/                            # React app
 ├── .cursor/skills/topic-to-posts/  # Cursor skill: notes → posts
-└── .github/workflows/deploy.yml    # GitHub Pages deploy
+└── .github/workflows/deploy.yml    # builds → pushes gh-pages branch
 ```
 
 ---
@@ -114,20 +114,34 @@ git push -u origin main
 
 ---
 
-## 4. GitHub Pages (static hosting)
+## 4. GitHub Pages (deploy from a branch)
 
-The workflow in `.github/workflows/deploy.yml` builds with Vite and deploys `dist/` to Pages.
+Same pattern as a `gh-pages` site: build output is published to a **`gh-pages`** branch, and Pages serves that branch.
+
+### One-time Pages settings
 
 1. Repo → **Settings** → **Pages**
-2. **Build and deployment** → Source: **GitHub Actions**
-3. Push to `main` (or run the workflow manually under **Actions**)
-4. Wait for the **Deploy to GitHub Pages** workflow to finish (green check)
-5. Open: https://mithunputhusseri.github.io/course-reels/
+2. **Build and deployment** → Source: **Deploy from a branch**
+3. Branch: **`gh-pages`** / folder: **`/` (root)** → Save
+
+### How deploys happen
+
+**Automatic (preferred):** push to `main`. The workflow in `.github/workflows/deploy.yml` builds with Vite and force-pushes `dist/` to the `gh-pages` branch.
+
+**Manual (like refinedental’s `npm run deploy`):**
+
+```bash
+npm run deploy
+```
+
+That runs `predeploy` (build) then `gh-pages -d dist`, which creates/updates the `gh-pages` branch on GitHub.
+
+Then open: https://mithunputhusseri.github.io/course-reels/
 
 If the site 404s:
 
-- Confirm Pages source is **GitHub Actions** (not “Deploy from a branch”)
-- Confirm the workflow succeeded
+- Confirm Pages source is **Deploy from a branch** → `gh-pages` / `/ (root)`
+- Confirm the `gh-pages` branch exists and has an `index.html`
 - Hard-refresh; DNS/CDN can take a minute on first publish
 
 ---
@@ -176,7 +190,7 @@ The skill lives at `.cursor/skills/topic-to-posts/SKILL.md`.
    }
    ```
 
-4. Preview locally (`npm run dev`), then commit and push — Actions redeploys Pages.
+4. Preview locally (`npm run dev`), then commit and push — the workflow redeploys the `gh-pages` branch.
 
 ### Post HTML tip
 
@@ -202,7 +216,7 @@ Posts are **fragments** (no full HTML document). Example:
 | `npm run dev` | Local mobile-friendly preview |
 | `npm run build` | Production build into `dist/` |
 | `npm run preview` | Serve the production build locally |
-| `npm run deploy` | Optional manual deploy via `gh-pages` (Actions is preferred) |
+| `npm run deploy` | Build and push `dist/` to the `gh-pages` branch |
 
 ## Sample content
 
