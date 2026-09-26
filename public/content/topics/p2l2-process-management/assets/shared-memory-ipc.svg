@@ -2,7 +2,6 @@
   <rect width="420" height="260" fill="#f7f4ef"/>
   <text x="210" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Shared-memory IPC</text>
 
-  <!-- Process A address space -->
   <rect x="20" y="50" width="150" height="140" rx="10" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
   <text x="95" y="74" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Process A</text>
   <rect x="36" y="90" width="118" height="36" rx="6" fill="#f3e8d8" stroke="#c47a3a" stroke-width="2"/>
@@ -10,7 +9,6 @@
   <rect x="36" y="140" width="118" height="28" rx="4" fill="#fff" stroke="#3d7ea6"/>
   <text x="95" y="158" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#5a6b73">private pages</text>
 
-  <!-- Process B -->
   <rect x="250" y="50" width="150" height="140" rx="10" fill="#e4f0e8" stroke="#2f8f74" stroke-width="2"/>
   <text x="325" y="74" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Process B</text>
   <rect x="266" y="90" width="118" height="36" rx="6" fill="#f3e8d8" stroke="#c47a3a" stroke-width="2"/>
@@ -18,10 +16,9 @@
   <rect x="266" y="140" width="118" height="28" rx="4" fill="#fff" stroke="#2f8f74"/>
   <text x="325" y="158" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#5a6b73">private pages</text>
 
-  <!-- Link -->
   <path d="M154 108 H246" stroke="#c47a3a" stroke-width="2.5" stroke-dasharray="5 3"/>
   <text x="210" y="98" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#c47a3a">same physical pages</text>
 
   <text x="210" y="220" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">OS maps once; apps read/write directly</text>
-  <text x="210" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#7a7268">Fast · apps must sync (locks, barriers)</text>
+  <text x="210" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#7a7268">Fast - apps must sync (locks, barriers)</text>
 </svg>

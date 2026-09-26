@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" role="img" aria-label="Ready queue, CPU, and I/O queues">
   <rect width="420" height="300" fill="#f7f4ef"/>
-  <text x="210" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Ready queue · CPU · I/O</text>
+  <text x="210" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Ready queue / CPU / I/O</text>
 
-  <!-- Ready queue -->
   <rect x="20" y="60" width="130" height="160" rx="10" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
   <text x="85" y="86" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Ready queue</text>
   <rect x="36" y="100" width="98" height="24" rx="4" fill="#fff" stroke="#3d7ea6"/>
@@ -12,12 +11,10 @@
   <rect x="36" y="164" width="98" height="24" rx="4" fill="#fff" stroke="#3d7ea6"/>
   <text x="85" y="180" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">P5</text>
 
-  <!-- CPU -->
   <rect x="185" y="100" width="90" height="70" rx="10" fill="#1a2a33"/>
   <text x="230" y="130" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff">CPU</text>
   <text x="230" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#9ecfb8">running P1</text>
 
-  <!-- I/O queue -->
   <rect x="300" y="60" width="100" height="160" rx="10" fill="#f3e8d8" stroke="#c47a3a" stroke-width="2"/>
   <text x="350" y="86" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">I/O queue</text>
   <rect x="314" y="110" width="72" height="24" rx="4" fill="#fff" stroke="#c47a3a"/>
@@ -25,7 +22,6 @@
   <rect x="314" y="146" width="72" height="24" rx="4" fill="#fff" stroke="#c47a3a"/>
   <text x="350" y="162" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#1a2a33">disk</text>
 
-  <!-- Flows -->
   <path d="M150 130 H180" stroke="#2f8f74" stroke-width="2" marker-end="url(#arr)"/>
   <text x="155" y="120" font-family="system-ui,sans-serif" font-size="9" fill="#2f8f74">dispatch</text>
 
@@ -33,7 +29,7 @@
   <text x="268" y="110" font-family="system-ui,sans-serif" font-size="9" fill="#c47a3a">I/O req</text>
 
   <path d="M350 220 V250 H85 V225" stroke="#3d7ea6" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
-  <text x="200" y="245" font-family="system-ui,sans-serif" font-size="10" fill="#3d7ea6">I/O complete ’ ready</text>
+  <text x="200" y="245" font-family="system-ui,sans-serif" font-size="10" fill="#3d7ea6">I/O complete -&gt; ready</text>
 
   <path d="M230 170 V250" stroke="#7a7268" stroke-width="1.5" stroke-dasharray="4 3"/>
   <text x="238" y="210" font-family="system-ui,sans-serif" font-size="9" fill="#7a7268">slice end</text>

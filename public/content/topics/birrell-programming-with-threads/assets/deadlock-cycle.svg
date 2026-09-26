@@ -21,13 +21,11 @@
       <path d="M0,0 L8,4 L0,8 Z" fill="#b33a3a"/>
     </marker>
   </defs>
-  <!-- A wants M2 -->
   <path d="M160 95 H255" stroke="#b33a3a" stroke-width="1.8" marker-end="url(#d)"/>
   <text x="205" y="88" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#b33a3a">wants M2</text>
 
-  <!-- B wants M1 -->
   <path d="M260 115 H165" stroke="#b33a3a" stroke-width="1.8" marker-end="url(#d)"/>
   <text x="210" y="138" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#b33a3a">wants M1</text>
 
-  <text x="210" y="248" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">Fix: acquire M1 then M2  always the same order</text>
+  <text x="210" y="248" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">Fix: acquire M1 then M2 - always the same order</text>
 </svg>

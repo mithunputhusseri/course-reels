@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" role="img" aria-label="Virtual memory mapped via page tables">
   <rect width="420" height="300" fill="#f7f4ef"/>
-  <text x="210" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Virtual ’ physical via page tables</text>
+  <text x="210" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1a2a33">Virtual to physical via page tables</text>
 
-  <!-- Virtual space -->
   <rect x="24" y="50" width="120" height="200" rx="10" fill="#dceaf2" stroke="#3d7ea6" stroke-width="2"/>
   <text x="84" y="74" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Virtual</text>
   <rect x="36" y="90" width="96" height="28" rx="4" fill="#fff" stroke="#3d7ea6"/>
@@ -12,14 +11,12 @@
   <rect x="36" y="188" width="96" height="22" rx="4" fill="#b8d4e8" stroke="#3d7ea6"/>
   <text x="84" y="236" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#5a6b73">process view</text>
 
-  <!-- Page table -->
   <rect x="168" y="90" width="84" height="120" rx="8" fill="#f3e8d8" stroke="#c47a3a" stroke-width="2"/>
   <text x="210" y="112" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#1a2a33">Page</text>
   <text x="210" y="128" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#1a2a33">table</text>
   <text x="210" y="158" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#c47a3a">OS maps</text>
-  <text x="210" y="176" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#c47a3a">V ’ P</text>
+  <text x="210" y="176" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#c47a3a">V -&gt; P</text>
 
-  <!-- Physical DRAM -->
   <rect x="276" y="50" width="120" height="200" rx="10" fill="#e4f0e8" stroke="#2f8f74" stroke-width="2"/>
   <text x="336" y="74" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1a2a33">Physical</text>
   <rect x="288" y="90" width="96" height="22" rx="4" fill="#9ecfb8" stroke="#2f8f74"/>
@@ -29,8 +26,7 @@
   <rect x="288" y="188" width="96" height="22" rx="4" fill="#fff" stroke="#2f8f74"/>
   <text x="336" y="236" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#5a6b73">DRAM frames</text>
 
-  <!-- Arrows -->
   <path d="M148 104 L164 140" stroke="#c47a3a" stroke-width="2" fill="none"/>
   <path d="M252 150 L274 134" stroke="#c47a3a" stroke-width="2" fill="none"/>
-  <text x="210" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">Example: 0x03c5 ’ 0x0f0f</text>
+  <text x="210" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">Example: 0x03c5 -&gt; 0x0f0f</text>
 </svg>

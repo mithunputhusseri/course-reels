@@ -18,6 +18,6 @@
   <text x="255" y="160" font-family="system-ui,sans-serif" font-size="11" fill="#2f8f74">Signal(c)</text>
   <text x="255" y="188" font-family="system-ui,sans-serif" font-size="11" fill="#b33a3a">blocked on a</text>
 
-  <text x="220" y="240" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#1a2a33">Wait never drops outer locks ’ signaler can't enter</text>
+  <text x="220" y="240" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#1a2a33">Wait never drops outer locks - signaler cannot enter</text>
   <text x="220" y="262" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#5a6b73">Remedy: end outer LOCK before calling a blocking lower layer</text>
 </svg>
